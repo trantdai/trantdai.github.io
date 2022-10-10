@@ -1,7 +1,4 @@
----
----
-
-@import "main.scss";
+--- --- @import "main.scss";
 
 #navbar {
     opacity: 0.95;
@@ -46,7 +43,7 @@ a.navbar-item.is-active {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 
     &::before {
-        //filter: blur(0.15rem);
+        filter: blur(0.15rem);
         background-image: url({{site.heroimage}});
         background-position: center;
         background-repeat: no-repeat;
@@ -57,13 +54,15 @@ a.navbar-item.is-active {
         bottom: 0px;
         left: 0px;
         position: absolute;
-        //opacity: 0.25;
+        opacity: 0.25;
         content: "";
     }
 }
+
 .title {
-    margin: auto 0.75rem!important;
+    margin: auto 0.75rem !important;
 }
+
 .subtitle {
     letter-spacing: 0.25rem;
 }
@@ -189,6 +188,7 @@ a.navbar-item.is-active {
 
     .button {
         transition: all 0.25s ease;
+
         &:focus {
             outline: 0.25rem solid white;
         }
@@ -238,7 +238,8 @@ a.navbar-item.is-active {
                 justify-content: center;
                 margin: auto;
                 transition: all 0.25s ease;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.15);
                 }
             }
@@ -261,6 +262,7 @@ a.navbar-item.is-active {
     .columns {
         .column {
             border-radius: 0.5rem;
+
             .image {
                 background-position: center;
                 background-repeat: no-repeat;
@@ -277,14 +279,17 @@ a.navbar-item.is-active {
         transition: all 0.5s ease;
         margin-bottom: 0.5rem !important;
         display: inline-table;
+
         &:hover {
             transform: scale(0.975);
         }
     }
+
     .card {
         transition: all 0.25s ease;
+
         &:hover {
-            background-color: rgba($color: #000000, $alpha: 0.90)!important;
+            background-color: rgba($color: #000000, $alpha: 0.90) !important;
         }
     }
 }
@@ -293,18 +298,23 @@ a.navbar-item.is-active {
     @media (min-width: 768px) {
         margin: auto 2.5vmax;
     }
+
     a {
         text-decoration: underline;
     }
+
     #title {
         text-decoration: none;
     }
+
     .title {
         margin: auto;
     }
+
     #post-image {
         border-radius: 0.25rem;
     }
+
     .subtitle {
         letter-spacing: 0.05rem;
     }
@@ -316,21 +326,31 @@ a.navbar-item.is-active {
     .tag {
         margin: 0.15rem auto;
     }
+
     .content {
-        ol, ul, blockquote {
+
+        ol,
+        ul,
+        blockquote {
             display: inline-block;
         }
-        hr{
+
+        hr {
             background-color: grey;
         }
-        img, iframe {
+
+        img,
+        iframe {
             max-width: calc(100% - 25vw);
             margin: 0.25rem auto;
+
             @media (max-width: 768px) {
                 max-width: calc(100% - 5vw);
             }
         }
-        ul, ol {
+
+        ul,
+        ol {
             display: inline-block;
         }
     }
@@ -348,7 +368,10 @@ a.navbar-item.is-active {
 
 #page-section {
     .content {
-        ul, ol, blockquote {
+
+        ul,
+        ol,
+        blockquote {
             display: inline-block;
         }
     }
