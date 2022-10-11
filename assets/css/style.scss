@@ -25,12 +25,16 @@ a.navbar-item:hover,
 
 a.navbar-item.is-active {
     background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
+    color: #ffd700;
 
     &:hover {
         background-color: rgba($color: #fff, $alpha: 0.25) !important;
         color: grey;
     }
+}
+
+a.navbar-item, a.navbar-link {
+    color: #ffd700 !important;
 }
 
 .navbar-link:not(.is-arrowless)::after {
