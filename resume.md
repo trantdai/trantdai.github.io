@@ -72,7 +72,7 @@ September 2022 - Present \| **[Commonwealth Bank of Australia](https://www.commb
 - Design, build, and maintain shared Python library and its DevOps pipeline producing PyPi package called PyCyber for Cyber Security Automation team's automation solution development
 - Undertake AppSec champion role responsible for secure code review and approval
 - Actively drive initiatives that identify opportunities to optimise, automate or rationalise activities across Cyber Security controls
-- Drive efficiencies and productivity gains through implementation of automation functions/solutions across Cyber Security group to uplift Cyber posture. These include privileged service account creation automation, Splunk onboarding automation, Akamai automation
+- Drive efficiencies and productivity gains through implementation of automation functions/solutions across Cyber Security group to uplift Cyber posture. These include privileged service account creation automation, Splunk onboarding automation, Akamai automation.
 - Influence and drive practice of Automation standardisation across Cyber Security group
 - Train Security Architects in SDLC and secure coding as they transition to the Security Engineering roles
 
@@ -232,6 +232,10 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING & INDUSTRY CERTIFICATES
 
+- September 2022 \| Agile Programming Techniques training
+- September 2022 \| GitHub for Developers training
+- August 2022 \| Containers and Kubernetes with Red Hat OpenShift Platform training
+- August 2022 \| Agile Quick Start program training
 - May 2022 \| HashiCorp Advanced Data Protection with Vault Workshop
 - May 2022 \| Trend Micro Cloud Conformity Training
 - April 2022 \| Akamai DevOps Professional
