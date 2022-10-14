@@ -258,6 +258,8 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING & INDUSTRY CERTIFICATES
 
+- October 2022 \| Udemy AWS Certified Security Specialty 2022 (WIP)
+- October 2022 \| Udemy Ultimate AWS Certified Developer Associate 2022 - NEW! (WIP)
 - September 2022 \| Agile Programming Techniques training
 - September 2022 \| GitHub for Developers training
 - August 2022 \| Containers and Kubernetes with Red Hat OpenShift Platform training
