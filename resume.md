@@ -33,6 +33,32 @@ permalink: "/resume"
 <br />
 <!-- <a href="/assets/images/Jimmie Gmaz - web CV.pdf" target="_blank" class="has-text-black"><i class="fas fa-file-pdf"></i> Full CV</a> -->
 </div>
+<br>
+*Last updated: **October 2022***
+
+## TABLE OF CONTENTS
+
+  - [EXECUTIVE SUMMARY](#executive-summary)
+  - [CORE TECHNICAL COMPETENCIES](#core-technical-competencies)
+  - [RECOGNISED ACHIEVEMENTS](#recognised-achievements)
+  - [INDUSTRY EXPERIENCE](#industry-experience)
+      - [Senior Engineer - Security Automation](#senior-engineer---security-automation)
+      - [Senior Cyber Security Automation Engineer](#senior-cyber-security-automation-engineer)
+      - [Technology Owner - Firewall Automation](#technology-owner---firewall-automation)
+      - [Network Security Engineer](#network-security-engineer)
+      - [IT Network Support Analyst](#it-network-support-analyst)
+      - [Network Engineer](#network-engineer)
+      - [Network & Systems Administrator, Contractor](#network--systems-administrator-contractor)
+      - [Cisco Network Engineer, Contractor](#cisco-network-engineer-contractor)
+      - [System Administrator](#system-administrator)
+  - [ACADEMIC EXPERIENCE](#academic-experience)
+      - [Researcher](#researcher)
+  - [EDUCATION HISTORY](#education-history)
+      - [PhD in Computing and Communications Engineering](#phd-in-computing-and-communications-engineering)
+      - [Master of Computer Engineering (Network Security Focus)](#master-of-computer-engineering-network-security-focus)
+      - [Engineer in Information and Communications Technology](#engineer-in-information-and-communications-technology)
+  - [FURTHER TRAINING & INDUSTRY CERTIFICATES](#further-training--industry-certificates)
+  - [PUBLICATIONS](#publications)
 
 ## EXECUTIVE SUMMARY
 
@@ -267,10 +293,6 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 - August 2011 \| Cisco Certified Network Associate Certification (CCNA)
 - June 2005 \| Cisco Certified Network Associate Certification (CCNA)
 
-## PUBLICATAIONS
+## PUBLICATIONS
 
 See [publications](/publications.md).
-
-<hr class="has-background-warning" />
-
-Last updated: **August 2022**
