@@ -96,13 +96,8 @@ September 2022 - Present \| **[Commonwealth Bank of Australia](https://www.commb
 
 **Responsibilities**
 
-- Architect, design and implement DevSecOps framework and practices for the bank's brand new Cyber Security Automation team using GitHub Enterprise, TeamCity, Docker, Checkmarx, Jfrog Artifactory, Jfrog Xray, HashiCorp Vault, Bash scripting
-- Design, build, and maintain shared Python library and its DevOps pipeline producing PyPi package called PyCyber for Cyber Security Automation team's automation solution development
-- Undertake AppSec champion role responsible for secure code review and approval
-- Actively drive initiatives that identify opportunities to optimise, automate or rationalise activities across Cyber Security controls
-- Drive efficiencies and productivity gains through implementation of automation functions/solutions across Cyber Security group to uplift Cyber posture. These include privileged service account creation automation, Splunk onboarding automation, Akamai automation.
-- Influence and drive practice of Automation standardisation across Cyber Security group
-- Train Security Architects in SDLC and secure coding as they transition to the Security Engineering roles
+- Undertake the same responsiblities as my previous Senior Cyber Security Automation Engineer role
+- Currently architect, design and implement the Terraform based Akamai automation framework and self service automation solution for IP/Geo Firewalling and CDN ACL use case
 
 #### Senior Cyber Security Automation Engineer
 
@@ -112,7 +107,7 @@ May 2022 - September 2022 \| **[Commonwealth Bank of Australia](https://www.comm
 
 - Architect, design and implement DevSecOps framework and practices for the bank's brand new Cyber Security Automation team using GitHub Enterprise, TeamCity, Docker, Checkmarx, Jfrog Artifactory, Jfrog Xray, HashiCorp Vault, Bash scripting
 - Design, build, and maintain shared Python library and its DevOps pipeline producing PyPi package called PyCyber for Cyber Security Automation team's automation solution development
-- Undertake AppSec champion role responsible for secure code review and approval
+- Undertake CBA AppSec champion role responsible for performing secure code review and approval, attending and giving talks to monthly AppSec champion meetups
 - Actively drive initiatives that identify opportunities to optimise, automate or rationalise activities across Cyber Security controls
 - Drive efficiencies and productivity gains through implementation of automation functions/solutions across Cyber Security group to uplift Cyber posture. These include privileged service account creation automation, Splunk onboarding automation, Akamai automation
 - Influence and drive practice of Automation standardisation across Cyber Security group
