@@ -78,6 +78,8 @@ Highly talented, motivated and research oriented Computing and Communications Ph
 - [x] IPAM, DHCP, DNS and IPSEC & VPNs
 
 ## RECOGNISED ACHIEVEMENTS
+- 2022 \| Annual performance achievement of Above Expectations and top (75% of maximum) bonus award
+- 2021 \| Recognition of Commitment for the delivery of the CI/CD pipeline that automates firewall policy breach reporting for Network Security control team
 - 2019 \| Add Value Award for the perseverance and innovation in firewall automation and delivery of its benefits to business units
 - 2019 \| STAR: Special Thanks And Recognition Award for the last minute support for the Air Canada cutover and ensure Amadeus had a happy customer
 - 2016 \| STAR: Special Thanks And Recognition Award for the exceptional contributions to the firewall migration project
@@ -264,6 +266,7 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 - September 2022 \| GitHub for Developers training
 - August 2022 \| Containers and Kubernetes with Red Hat OpenShift Platform training
 - August 2022 \| Agile Quick Start program training
+- July 2022 \| Bash Mastery: The Complete Guide to Bash Shell Scripting
 - May 2022 \| HashiCorp Advanced Data Protection with Vault Workshop
 - May 2022 \| Trend Micro Cloud Conformity Training
 - April 2022 \| Akamai DevOps Professional
