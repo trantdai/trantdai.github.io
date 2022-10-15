@@ -2,7 +2,7 @@
 title: Reading
 layout: reading
 ---
-
+***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 ## 📙 DevSecOps
 - {: .read-book-li } [DevSecOps Maturity Model](https://github.com/OWASP/www-project-devsecops-maturity-model/blob/master/index.md)
 - {: .read-book-li } [Bomber for SBOMs](https://github.com/devops-kung-fu/bomber)
