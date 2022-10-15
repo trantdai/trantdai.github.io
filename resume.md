@@ -66,27 +66,42 @@ Highly talented, motivated and research oriented Computing and Communications Ph
 <br>Recognized for professionalism, positive mental attitude, commitment to excellence, and natural ability for critical thinking and complex problems solving. Excellent interpersonal skills, self-motiveted, and able to communicate and collaborate effectively with co-workers at all levels.
 
 ## CORE TECHNICAL COMPETENCIES
-- [x] End-to-end cross-domain complex large-scale mission-critical project/product delivery related skills
-- [x] Analytical, research, development and troubleshooting skills
-- [x] Integrated automation and CI/CD pipeline solution architecture, design, and implementation
-- [x] IaC/Terraform, Docker and DevSecOps tooling
-- [x] Software development/scripting tools like Python, Go, Bash, Ansible, Git, Jinja2, JSON, YAML, REST APIs
-- [x] Linux and Windows administration
-- [x] Microsoft Azure security
-- [x] Next-generation and traditional firewalls, secure web gateway
-- [x] Switching and routing
-- [x] IPAM, DHCP, DNS and IPSEC & VPNs
+☑️ End-to-end cross-domain complex large-scale mission-critical project/product delivery related skills
+<br>
+☑️ Analytical, research, development and troubleshooting skills
+<br>
+☑️ Integrated automation and CI/CD pipeline solution architecture, design, and implementation
+<br>
+☑️ IaC/Terraform, Docker and DevSecOps tooling
+<br>
+☑️ Software development/scripting tools like Python, Go, Bash, Ansible, Git, Jinja2, JSON, YAML, REST APIs
+<br>
+☑️ Linux and Windows administration
+<br>
+☑️ Microsoft Azure security
+<br>
+☑️ Next-generation and traditional firewalls, secure web gateway
+<br>
+☑️ Switching and routing
+<br>
+☑️ IPAM, DHCP, DNS and IPSEC & VPNs
 
 ## RECOGNISED ACHIEVEMENTS
-- 2022 \| Annual performance achievement of Above Expectations and top (75% of maximum) bonus award
-- 2021 \| Recognition of Commitment for the delivery of the CI/CD pipeline that automates firewall policy breach reporting for Network Security control team
-- 2019 \| Add Value Award for the perseverance and innovation in firewall automation and delivery of its benefits to business units
-- 2019 \| STAR: Special Thanks And Recognition Award for the last minute support for the Air Canada cutover and ensure Amadeus had a happy customer
-- 2016 \| STAR: Special Thanks And Recognition Award for the exceptional contributions to the firewall migration project
-- 2008 \| Full UTS Faculty of Engineering Postgraduate Research Scholarship for the Doctoral Program
-- 2007 \| Kyung Hee University President’s Special Prize for the Excellent Foreign Student
-- 2005 \| Full Kyung Hee University and Networking Lab. Scholarships for the Master course in Kyung Hee University
-
+🥇 2022 \| Annual performance achievement of Above Expectations and top (75% of maximum) bonus award
+<br>
+🥇 2021 \| Recognition of Commitment for the delivery of the CI/CD pipeline that automates firewall policy breach reporting for Network Security control team
+<br>
+🥇 2019 \| Add Value Award for the perseverance and innovation in firewall automation and delivery of its benefits to business units
+<br>
+🥇 2019 \| STAR: Special Thanks And Recognition Award for the last minute support for the Air Canada cutover and ensure Amadeus had a happy customer
+<br>
+🥇 2016 \| STAR: Special Thanks And Recognition Award for the exceptional contributions to the firewall migration project
+<br>
+🥇 2008 \| Full UTS Faculty of Engineering Postgraduate Research Scholarship for the Doctoral Program
+<br>
+🥇 2007 \| Kyung Hee University President’s Special Prize for the Excellent Foreign Student
+<br>
+🥇 2005 \| Full Kyung Hee University and Networking Lab. Scholarships for the Master course in Kyung Hee University
 
 ## INDUSTRY EXPERIENCE
 
@@ -112,6 +127,10 @@ May 2022 - September 2022 \| **[Commonwealth Bank of Australia](https://www.comm
 - Drive efficiencies and productivity gains through implementation of automation functions/solutions across Cyber Security group to uplift Cyber posture. These include privileged service account creation automation, Splunk onboarding automation, Akamai automation
 - Influence and drive practice of Automation standardisation across Cyber Security group
 - Train Security Architects in SDLC and secure coding as they transition to the Security Engineering roles
+
+**Achievements**
+- Achieved the Above Expectations annual performance review and awarded top (75% of maximum) bonus
+- Achieved the recognition of Commitment for the delivery of the CI/CD pipeline that automates firewall policy breach reporting function for Network Security control team
 
 #### Technology Owner - Firewall Automation
 
@@ -246,12 +265,18 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 #### PhD in Computing and Communications Engineering
 2008 – 2011  |  University of Technology, Sydney, Australia
+<br>
+**Thesis:** ***Controlled Link Establishment Attacks on Distributed Sensor Networks and Countermeasures***
 
 #### Master of Computer Engineering (Network Security Focus)
 2005 – 2007  |  Kyung Hee University, Suwon, SOUTH KOREA
+<br>
+**Thesis:** ***Security Algorithms for Wireless Sensor Networks***
 
 #### Engineer in Information and Communications Technology
-2005 – 2007  |  Hanoi University of Science and Technology, Hanoi, VIETNAM
+2000 – 2005  |  Hanoi University of Science and Technology, Hanoi, VIETNAM
+<br>
+**Thesis:** ***Kerberos-based authentication for FTP applications***
 
 ## FURTHER TRAINING & INDUSTRY CERTIFICATES
 
