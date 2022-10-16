@@ -12,7 +12,7 @@ author:
   last_name: Tran
 permalink: "/resume"
 ---
-# Experienced Security as Code Enabler
+# Continuous Innovative and Resourceful Security Enabler
 
 <div class="column is-full is-size-4">
 {% unless site.email == '' %}
@@ -31,7 +31,6 @@ permalink: "/resume"
 <a href="http://www.twitter.com/{{site.twitter_username}}" target="_blank" class="has-text-link"><i class="fab fa-twitter"></i> {{site.twitter_username}}</a>
 {% endunless %}
 <br />
-<!-- <a href="/assets/images/Jimmie Gmaz - web CV.pdf" target="_blank" class="has-text-black"><i class="fas fa-file-pdf"></i> Full CV</a> -->
 </div>
 <br>
 *Last updated: **October 2022***
@@ -62,8 +61,11 @@ permalink: "/resume"
 
 ## EXECUTIVE SUMMARY
 
-Highly talented, motivated and research oriented Computing and Communications PhD graduate with extensive cross-domain engineering experience comprising of over 11 years work experience in multiple domains of Network Security, Cyber Security , DevOps, and automation solution development with a proven track record of success delivering complicated security architecture, design, development, and implementation. Instrumental in driving improvements in processes, operational efficiency/agility and system stability in complex large-scale mission-critical environments across diverse industries including Financial, IT, Travel, Food and Beverage, and Education services. Skilled in multi-vendor firewall migration and administration, Cyber/Cloud Security automation, security technology REST APIs, Infrastructure as Code (Terraform/Terratest), Python secure software development, Linux, Bash scripting, Ansible/Tower, Security as Code, Docker, CI/CD and DevSecOps tools/methodologies.
-<br>Recognized for professionalism, positive mental attitude, commitment to excellence, and natural ability for critical thinking and complex problems solving. Excellent interpersonal skills, self-motiveted, and able to communicate and collaborate effectively with co-workers at all levels.
+Highly talented, motivated and research oriented Computing and Communications PhD graduate with extensive cross-domain engineering experience comprising of over 11 years work experience in multiple domains of Network Security, Cyber Security , DevOps, and automation solution development with a proven track record of success delivering complicated security architecture, design, development, and implementation.
+<br><br>
+Instrumental in driving improvements in processes, operational efficiency/agility and system stability in complex large-scale mission-critical environments across diverse industries including Financial, IT, Travel, Food and Beverage, and Education services. Skilled in multi-vendor firewall migration and administration, Cyber/Cloud Security automation, security technology REST APIs, Infrastructure as Code (Terraform/Terratest), Python secure software development, Linux, Bash scripting, Ansible/Tower, Security as Code, Docker, CI/CD and DevSecOps tools/methodologies.
+<br><br>
+Recognized for professionalism, positive mental attitude, commitment to excellence, and natural ability for critical thinking and complex problems solving. Excellent interpersonal and mentoring skills, self-motiveted, and able to communicate and collaborate effectively with co-workers at all levels.
 
 ## CORE TECHNICAL COMPETENCIES
 ☑️ End-to-end cross-domain complex large-scale mission-critical project/product delivery related skills
@@ -264,27 +266,28 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 ## EDUCATION HISTORY
 
 #### PhD in Computing and Communications Engineering
-2008 – 2011  |  University of Technology, Sydney, Australia
+2008 – 2011  |  [University of Technology, Sydney](https://www.uts.edu.au/), Australia
 <br>
 **Thesis:** ***Controlled Link Establishment Attacks on Distributed Sensor Networks and Countermeasures***
 
 #### Master of Computer Engineering (Network Security Focus)
-2005 – 2007  |  Kyung Hee University, Suwon, SOUTH KOREA
+2005 – 2007  |  [Kyung Hee University](https://www.khu.ac.kr/eng/main/index.do), Suwon, South Korea
 <br>
 **Thesis:** ***Security Algorithms for Wireless Sensor Networks***
 
 #### Engineer in Information and Communications Technology
-2000 – 2005  |  Hanoi University of Science and Technology, Hanoi, VIETNAM
+2000 – 2005  |  [Hanoi University of Science and Technology](https://en.hust.edu.vn/), Hanoi, Vietnam
 <br>
 **Thesis:** ***Kerberos-based authentication for FTP applications***
 
 ## FURTHER TRAINING & INDUSTRY CERTIFICATES
 
-- October 2022 \| Udemy AWS Certified Security Specialty 2022 (WIP)
-- October 2022 \| Udemy Ultimate AWS Certified Developer Associate 2022 - NEW! (WIP)
+- October 2022 \| Udemy AWS Certified Security Specialty 2022 (**WIP**)
+- October 2022 \| Udemy Ultimate AWS Certified Developer Associate 2022 - NEW! (**WIP**)
 - September 2022 \| Agile Programming Techniques training
 - September 2022 \| GitHub for Developers training
 - August 2022 \| Containers and Kubernetes with Red Hat OpenShift Platform training
+- August 2022 \| (ISC)2 Certified Information Systems Security Professional (CISSP) Official Study Guide, 9th Edition Self Study (**WIP**)
 - August 2022 \| Agile Quick Start program training
 - July 2022 \| Bash Mastery: The Complete Guide to Bash Shell Scripting
 - May 2022 \| HashiCorp Advanced Data Protection with Vault Workshop
@@ -320,4 +323,4 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## PUBLICATIONS
 
-See [publications](/publications.md).
+See [publications](./publications).
