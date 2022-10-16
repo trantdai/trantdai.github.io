@@ -31,6 +31,9 @@ layout: reading
 - {: .read-book-li } [Who Moved My Cheese?: An A-Mazing Way to Deal with Change in Your Work and in Your Life](https://www.amazon.com.au/Who-Moved-My-Cheese-Mazing-ebook/dp/B004CR6AM4)
 
 ## 📚 Unclassified
+- {: .unread-book-li } [Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
+- {: .unread-book-li } [How to Create an Impressive GitHub Profile README](https://www.sitepoint.com/github-profile-readme/)
+- {: .unread-book-li } [How to create a GitHub Profile README ](https://dev.to/github/how-to-create-a-github-profile-readme-jha)
 - {: .unread-book-li } [Top 10 CI/CD Security Risks](https://github.com/cider-security-research/top-10-cicd-security-risks)
 - {: .unread-book-li } [Field Guide to the Various Communities of Security ](https://www.philvenables.com/post/field-guide-to-the-various-communities-of-security)
 - {: .unread-book-li } [17 Network Security Concepts and Acronyms You Need to Know](https://www.gartner.com/en/articles/17-network-security-concepts-and-acronyms-you-need-to-know)
