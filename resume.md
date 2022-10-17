@@ -114,7 +114,7 @@ September 2022 - Present \| **[Commonwealth Bank of Australia](https://www.commb
 **Responsibilities**
 
 - Undertake the same responsiblities as my previous Senior Cyber Security Automation Engineer role
-- Work as a developer lead, architect, design, implement, and deliver the Terraform based Akamai automation framework and self service automation function for IP/Geo Firewalling and CDN ACL use case
+- Work as a solution and developer lead, architect, design, implement, and deliver the Terraform based Akamai automation framework and self service automation function for IP/Geo Firewalling and CDN ACL use case
 
 #### Senior Cyber Security Automation Engineer
 
@@ -128,7 +128,7 @@ May 2022 - September 2022 \| **[Commonwealth Bank of Australia](https://www.comm
 - Actively drive initiatives that identify opportunities to optimise, automate or rationalise activities across Cyber Security controls
 - Drive efficiencies and productivity gains through implementation of automation functions/solutions across Cyber Security group to uplift Cyber posture. These include privileged service account creation automation, Splunk onboarding automation, Akamai automation
 - Influence and drive practice of Automation standardisation across Cyber Security group
-- Undertake a vital role in the technical hiring process via conducting the resume screening and technical interviews to make sure only qualified candidates are selected
+- Conduct resume screening and technical interviews as part of hiring processes to ensure only qualified candidates are selected
 - Train Security Architects in SDLC and secure coding as they transition to the Security Engineering roles
 
 **Achievements**
@@ -147,7 +147,7 @@ February 2018 – May 2021 \| **[Amadeus IT Group](https://amadeus.com/en)** - 1
 - Architect, design, develop, maintain Python based multi-vendor firewall automation solutions for business use cases including automated end-to-end firewall path identification, SOC IP blocking, firewall change deployments, firewall permission checks, VPN cleanup, firewall definition cleanup
 - Integrate Python based multi-vendor firewall automation solutions with Ansible and Ansible AWX/Tower to produce user-friendly/guiding/self-service web GUI portals for firewall automation consumers and facilitate end-to-end automation initiatives via AWX API calls
 - Leverage firewall automation solutions to drive improvements in processes, operational efficiency/agility and system stability in mission-critical environment
-- Undertake a vital role in the technical hiring process via conducting the resume screening and technical interviews to make sure only qualified candidates are selected
+- Conduct resume screening and technical interviews as part of hiring processes to ensure only qualified candidates are selected
 - Mentor team members on Network Security and automation
 - Applied knowledge/skills/tools: PAN & Cisco firewalling & REST API, Python, Object oriented software design and development, Linux/Windows administration, Git, Bitbucket, Jira, Ansible/AWX, Jenkins, Docker, CI/CD workflow, Visual Studio Code, Insomnia, OpenAPI, Azure network/security, Terraform, Golang, Terratest
 
