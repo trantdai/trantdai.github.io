@@ -126,9 +126,10 @@ May 2022 - September 2022 \| **[Commonwealth Bank of Australia](https://www.comm
 - Design, build, and maintain shared Python library and its DevOps pipeline producing PyPi package called PyCyber for Cyber Security Automation team's automation solution development
 - Undertake CBA AppSec champion role responsible for performing secure code review and approval, attending and giving talks to monthly AppSec champion meetups
 - Actively drive initiatives that identify opportunities to optimise, automate or rationalise activities across Cyber Security controls
-- Drive efficiencies and productivity gains through implementation of automation functions/solutions across Cyber Security group to uplift Cyber posture. These include privileged service account creation automation, Splunk onboarding automation, Akamai automation
+- Drive efficiencies and productivity gains through implementation of automation functions/solutions across Cyber Security group to uplift Cyber posture. These include privileged service account creation automation, Splunk onboarding automation, and Akamai automation.
 - Influence and drive practice of Automation standardisation across Cyber Security group
 - Conduct resume screening and technical interviews as part of hiring processes to ensure only qualified candidates are selected
+- Act as a technical lead, manage and lead a small team of Cyber Security automation engineers
 - Train Security Architects in SDLC and secure coding as they transition to the Security Engineering roles
 
 **Achievements**
