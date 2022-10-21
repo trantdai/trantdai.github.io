@@ -318,6 +318,7 @@ a.navbar-link {
 
     a {
         text-decoration: underline;
+        color: #209cee;
     }
 
     #title {
@@ -352,7 +353,7 @@ a.navbar-link {
         }
 
         pre {
-            background-color: hsl(229, 53%, 53%);
+            background-color: #3273dc;
         }
 
         code {
@@ -364,8 +365,9 @@ a.navbar-link {
 
         pre code {
             color: #ffd700;
-            background-color: hsl(229, 53%, 53%);
+            background-color: #3273dc;
             font-size: 1.2em;
+            font-weight: bold;
         }
 
         .highlight h1,
@@ -385,7 +387,7 @@ a.navbar-link {
         }
 
         blockquote {
-            background-color: hsl(229, 53%, 53%);
+            background-color: #3273dc;
             border-left: none;
 
             a {
@@ -393,7 +395,7 @@ a.navbar-link {
             }
 
             code {
-                background-color: hsl(229, 53%, 53%);
+                background-color: #3273dc;
                 color: #ffd700;
             }
         }
@@ -466,10 +468,7 @@ a.navbar-link {
         }
 
         a {
-            // color: #1589FF;
-            // color: #0096FF;
-            color: #0095ff;
-            // color: #00FFFF;
+            color: #209cee;
         }
     }
 }
