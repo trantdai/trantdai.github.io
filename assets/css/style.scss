@@ -347,7 +347,28 @@ a.navbar-link {
 
     .content {
 
-        h1,
+        h1 {
+            color: #ffd700;
+        }
+
+        pre {
+            background-color: hsl(229, 53%, 53%);
+        }
+
+        code {
+            color: #44d7ff;
+            padding: .1em .1em .1em;
+            font-size: 1.05em;
+            // background-color: hsl(229, 53%, 53%)
+        }
+
+        pre code {
+            color: #ffd700;
+            background-color: hsl(229, 53%, 53%);
+            font-size: 1.2em;
+        }
+
+        .highlight h1,
         h2,
         h3,
         h4,
@@ -445,10 +466,10 @@ a.navbar-link {
         }
 
         a {
-                // color: #1589FF;
-                // color: #0096FF;
-                color: #0095ff;
-                // color: #00FFFF;
-            }
+            // color: #1589FF;
+            // color: #0096FF;
+            color: #0095ff;
+            // color: #00FFFF;
+        }
     }
 }
