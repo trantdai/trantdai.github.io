@@ -6,6 +6,9 @@ layout: reading
 
 ## 📙 DevSecOps
 
+- {: .read-book-li } [Announcing GUAC, a great pairing with SLSA (and SBOM)!](https://security.googleblog.com/2022/10/announcing-guac-great-pairing-with-slsa.html?m=1)
+- {: .read-book-li } [ guacsec /
+guac](https://github.com/guacsec/guac)
 - {: .read-book-li } [DevSecOps Maturity Model](https://github.com/OWASP/www-project-devsecops-maturity-model/blob/master/index.md)
 - {: .read-book-li } [Bomber for SBOMs](https://github.com/devops-kung-fu/bomber)
 - {: .read-book-li } [CycloneDX Python SBOM Generation Tool](https://github.com/trantdai/cyclonedx-python)
