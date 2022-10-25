@@ -1,28 +1,28 @@
 - name: End of Life New York Cisco Firewall Migration to Palo Alto Firewall
-  image: https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg
+  image: /assets/images/projects/cisco_pan_firewall_migration.png
   link:
   description: Stay tuned! More detail is coming soon!
 - name: SOC IP Blocking Automation
   link:
   image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
   description: Stay tuned! More detail is coming soon!
-- name: End-to-end Firewall Path Identification
+- name: End-to-end Firewall Path Identification Automation
   link:
   image: https://cdn.pixabay.com/photo/2016/06/25/12/55/art-1478831_960_720.jpg
   description: Stay tuned! More detail is coming soon!
-- name: Self Service Portal for Palo Alto VM-Series Firewall Auto Deployment
+- name: Terraform Based Self Service Portal for Palo Alto VM-Series Firewall Auto Deployment onto Azure
   link:
   image: https://cdn.pixabay.com/photo/2016/06/25/12/55/art-1478831_960_720.jpg
   description: Stay tuned! More detail is coming soon!
-- name: Self Service Portal for Palo Alto Security Policy Auto Management
+- name: Terraform Based Self Service Portal for Palo Alto Security Policy Auto Management
   link:
   image: https://cdn.pixabay.com/photo/2016/06/25/12/55/art-1478831_960_720.jpg
   description: Stay tuned! More detail is coming soon!
-- name: Self Service Portal for Splunk HEC Auto Onboarding
+- name: Python Based Self Service Portal for Splunk HEC Auto Onboarding
   link:
   image: https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg
   description: Stay tuned! More detail is coming soon!
-- name: Self Service Portal for Akamai IP/Geo Firewall and CDN ACL Auto Management
+- name: Terraform Based Self Service Portal for Akamai IP/Geo Firewall and CDN ACL Auto Management
   link:
   image: https://cdn.pixabay.com/photo/2016/12/02/02/10/idea-1876659_960_720.jpg
   description: Stay tuned! More detail is coming soon!
