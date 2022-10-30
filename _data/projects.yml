@@ -1,6 +1,6 @@
 - name: End of Life New York Cisco Firewall Migration to Palo Alto Firewall
   image: /assets/images/projects/firewall.png
-  link: /blog/2020-10-30-End-of-Life-New-York-Cisco-Firewall-Migration-to-Palo-Alto-Firewall
+  link: /blog/End-of-Life-New-York-Cisco-Firewall-Migration-to-Palo-Alto-Firewall
   description: Firewall migration from traditional layer 4 Cisco ASA firewall cluster to the next generation Palo Alto PA-5000 series firewall cluster.
 - name: SOC IP Blocking Automation
   link:
