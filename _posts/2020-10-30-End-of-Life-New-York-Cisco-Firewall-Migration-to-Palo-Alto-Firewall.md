@@ -15,9 +15,6 @@ tags:
 My first role when I joined Amadeus was working as a Network Security Engineer. At that time, there was a significant project to migrate the traditional layer 4 Cisco firewalls to the next generation layer 7 Palo Alto firewalls. I brought a great deal of knowledge and experience about the Palo Alto firewalls to the Network Security services team. At that time, my team members did not have much exposure and experience to the Palo Alto Networks products and technologies. My management spotted this fact and assigned me to lead the migration project of the internet gateway Cisco firewall cluster.
 <br>
 <br>
-![Cisco to Palo Alto Firewall Migration](/assets/images/blog/cisco_pan_firewall_migration.png "Cisco to Palo Alto Firewall Migration")
-<br>
-<br>
 The cluster was the largest and most complicated system in our largest civil datacenter in Europe. It had multiple interfaces that interconnected multiple production network environments: Internet, VPN, GWAN, Proxy, and Core. What contributed the most to the firewall configuration complexity was the fact that the cluster was connected to the BlueCoat proxy cluster to serve the Internet traffic. As a consequence, complicated Cisco ASA old school NAT exemption ruleset was deployed to make sure that only Internet outbound traffic was redirected to the proxy cluster for the further HTTP(S) traffic filtering. Due to the system complexity and crititicality, two additional senior members were assigned to work with me. Even, one of them was holding two renowned Cisco Certified Internetwork Expert Security and Routing and Switch certifications. We quickly formed a very collaborative and high performing team and learnt a lot from each other.
 <br>
 <br>
