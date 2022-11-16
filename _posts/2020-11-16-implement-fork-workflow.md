@@ -1,7 +1,7 @@
 ---
 title: Implement Fork Worflow
 layout: post
-post-image: "/assets/images/blog/git-fork-workflow.jpg"
+post-image: "/assets/images/blog/git-fork-workflow.png"
 description: Description of a fork, its benefits and git fork workflow implementation
 tags:
 - howto
