@@ -6,6 +6,8 @@ layout: reading
 
 ## 📙 DevSecOps
 
+- {: .read-book-li } [Build Python App Using Azure DevOps Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops)
+- {: .read-book-li } [Create Your First Python Azure DevOps Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=python%2Ctfs-2018-2%2Cbrowser)
 - {: .read-book-li } [Announcing GUAC, a great pairing with SLSA (and SBOM)!](https://security.googleblog.com/2022/10/announcing-guac-great-pairing-with-slsa.html?m=1)
 - {: .read-book-li } [ guacsec /
 guac](https://github.com/guacsec/guac)
