@@ -33,10 +33,12 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **November 2022***
+*Last updated: **December 2022***
 
 ## TABLE OF CONTENTS
 
+- [Continuous Innovative and Resourceful Security Enabler](#continuous-innovative-and-resourceful-security-enabler)
+  - [TABLE OF CONTENTS](#table-of-contents)
   - [EXECUTIVE SUMMARY](#executive-summary)
   - [CORE TECHNICAL COMPETENCIES](#core-technical-competencies)
   - [RECOGNISED ACHIEVEMENTS](#recognised-achievements)
@@ -47,7 +49,7 @@ permalink: "/resume"
       - [Network Security Engineer](#network-security-engineer)
       - [IT Network Support Analyst](#it-network-support-analyst)
       - [Network Engineer](#network-engineer)
-      - [Network & Systems Administrator, Contractor](#network--systems-administrator-contractor)
+      - [Network \& Systems Administrator, Contractor](#network--systems-administrator-contractor)
       - [Cisco Network Engineer, Contractor](#cisco-network-engineer-contractor)
       - [System Administrator](#system-administrator)
   - [ACADEMIC EXPERIENCE](#academic-experience)
@@ -56,7 +58,7 @@ permalink: "/resume"
       - [PhD in Computing and Communications Engineering](#phd-in-computing-and-communications-engineering)
       - [Master of Computer Engineering (Network Security Focus)](#master-of-computer-engineering-network-security-focus)
       - [Engineer in Information and Communications Technology](#engineer-in-information-and-communications-technology)
-  - [FURTHER TRAINING & INDUSTRY CERTIFICATES](#further-training--industry-certificates)
+  - [FURTHER TRAINING \& INDUSTRY CERTIFICATES](#further-training--industry-certificates)
   - [PUBLICATIONS](#publications)
 
 ## EXECUTIVE SUMMARY
@@ -114,7 +116,7 @@ September 2022 - Present \| **[Commonwealth Bank of Australia](https://www.commb
 **Responsibilities**
 
 - Undertake the same responsiblities as my previous Senior Cyber Security Automation Engineer role
-- Work as a solution and developer lead, architect, design, implement, and deliver the Terraform based Akamai automation framework and self service automation function for IP/Geo Firewalling and CDN ACL use case
+- Work as a solution and developer lead, architect, design, implement, and deliver the Terraform based Akamai automation framework and self service automation function for Akamai IP/Geo Firewalling and CDN ACL use case
 
 #### Senior Cyber Security Automation Engineer
 
@@ -130,7 +132,7 @@ May 2022 - September 2022 \| **[Commonwealth Bank of Australia](https://www.comm
 - Influence and drive practice of Automation standardisation across Cyber Security group
 - Conduct resume screening and technical interviews as part of hiring processes to ensure only qualified candidates are selected
 - Act as a technical lead, manage and lead a small team of Cyber Security automation engineers
-- Train Security Architects in SDLC and secure coding as they transition to the Security Engineering roles
+- Train security architects, cyber security engineers and control teams on automation solutions/functions and DevSecOps practices
 
 **Achievements**
 - Achieved the Above Expectations annual performance review and awarded top (75% of maximum) bonus
