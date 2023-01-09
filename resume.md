@@ -12,7 +12,7 @@ author:
   last_name: Tran
 permalink: "/resume"
 ---
-# Continuous Innovative and Resourceful Security Enabler
+# Continuous Innovative and Resourceful Security Enabler <!-- omit in toc -->
 
 <div class="column is-full is-size-4">
 {% unless site.email == '' %}
@@ -37,29 +37,28 @@ permalink: "/resume"
 
 ## TABLE OF CONTENTS
 
-- [Continuous Innovative and Resourceful Security Enabler](#continuous-innovative-and-resourceful-security-enabler)
-  - [TABLE OF CONTENTS](#table-of-contents)
-  - [EXECUTIVE SUMMARY](#executive-summary)
-  - [CORE TECHNICAL COMPETENCIES](#core-technical-competencies)
-  - [RECOGNISED ACHIEVEMENTS](#recognised-achievements)
-  - [INDUSTRY EXPERIENCE](#industry-experience)
-      - [Senior Engineer - Security Automation](#senior-engineer---security-automation)
-      - [Senior Cyber Security Automation Engineer](#senior-cyber-security-automation-engineer)
-      - [Technology Owner - Firewall Automation](#technology-owner---firewall-automation)
-      - [Network Security Engineer](#network-security-engineer)
-      - [IT Network Support Analyst](#it-network-support-analyst)
-      - [Network Engineer](#network-engineer)
-      - [Network \& Systems Administrator, Contractor](#network--systems-administrator-contractor)
-      - [Cisco Network Engineer, Contractor](#cisco-network-engineer-contractor)
-      - [System Administrator](#system-administrator)
-  - [ACADEMIC EXPERIENCE](#academic-experience)
-      - [Researcher](#researcher)
-  - [EDUCATION HISTORY](#education-history)
-      - [PhD in Computing and Communications Engineering](#phd-in-computing-and-communications-engineering)
-      - [Master of Computer Engineering (Network Security Focus)](#master-of-computer-engineering-network-security-focus)
-      - [Engineer in Information and Communications Technology](#engineer-in-information-and-communications-technology)
-  - [FURTHER TRAINING \& INDUSTRY CERTIFICATES](#further-training--industry-certificates)
-  - [PUBLICATIONS](#publications)
+- [TABLE OF CONTENTS](#table-of-contents)
+- [EXECUTIVE SUMMARY](#executive-summary)
+- [CORE TECHNICAL COMPETENCIES](#core-technical-competencies)
+- [RECOGNISED ACHIEVEMENTS](#recognised-achievements)
+- [INDUSTRY EXPERIENCE](#industry-experience)
+    - [Senior Engineer - Security Automation](#senior-engineer---security-automation)
+    - [Senior Cyber Security Automation Engineer](#senior-cyber-security-automation-engineer)
+    - [Technology Owner - Firewall Automation](#technology-owner---firewall-automation)
+    - [Network Security Engineer](#network-security-engineer)
+    - [IT Network Support Analyst](#it-network-support-analyst)
+    - [Network Engineer](#network-engineer)
+    - [Network \& Systems Administrator, Contractor](#network--systems-administrator-contractor)
+    - [Cisco Network Engineer, Contractor](#cisco-network-engineer-contractor)
+    - [System Administrator](#system-administrator)
+- [ACADEMIC EXPERIENCE](#academic-experience)
+    - [Researcher](#researcher)
+- [EDUCATION HISTORY](#education-history)
+    - [PhD in Computing and Communications Engineering](#phd-in-computing-and-communications-engineering)
+    - [Master of Computer Engineering (Network Security Focus)](#master-of-computer-engineering-network-security-focus)
+    - [Engineer in Information and Communications Technology](#engineer-in-information-and-communications-technology)
+- [FURTHER TRAINING \& INDUSTRY CERTIFICATES](#further-training--industry-certificates)
+- [PUBLICATIONS](#publications)
 
 ## EXECUTIVE SUMMARY
 
