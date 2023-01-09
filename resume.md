@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **December 2022***
+*Last updated: **January 2023***
 
 ## TABLE OF CONTENTS
 
@@ -288,14 +288,15 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING & INDUSTRY CERTIFICATES
 
+- December 2022 \| AZ-400 Microsoft Certification Exam Pass
 - November 2022 \| [AZ-400 Designing and Implementing Microsoft DevOps Solutions Course](https://learn.microsoft.com/en-us/training/courses/az-400t00)
 - October 2022 \| Udemy AWS Certified Security Specialty 2022 (**WIP**)
 - October 2022 \| Udemy Ultimate AWS Certified Developer Associate 2022 - NEW! (**WIP**)
-- September 2022 \| Agile Programming Techniques training
-- September 2022 \| GitHub for Developers training
-- August 2022 \| Containers and Kubernetes with Red Hat OpenShift Platform training
+- September 2022 \| Agile Programming Techniques Training
+- September 2022 \| GitHub for Developers Training
+- August 2022 \| Containers and Kubernetes with Red Hat OpenShift Platform Training
 - August 2022 \| (ISC)2 Certified Information Systems Security Professional (CISSP) Official Study Guide, 9th Edition Self Study (**WIP**)
-- August 2022 \| Agile Quick Start program training
+- August 2022 \| Agile Quick Start Program Training
 - July 2022 \| Bash Mastery: The Complete Guide to Bash Shell Scripting
 - May 2022 \| HashiCorp Advanced Data Protection with Vault Workshop
 - May 2022 \| Trend Micro Cloud Conformity Training
