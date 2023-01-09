@@ -57,7 +57,7 @@ permalink: "/resume"
     - [PhD in Computing and Communications Engineering](#phd-in-computing-and-communications-engineering)
     - [Master of Computer Engineering (Network Security Focus)](#master-of-computer-engineering-network-security-focus)
     - [Engineer in Information and Communications Technology](#engineer-in-information-and-communications-technology)
-- [FURTHER TRAINING \& INDUSTRY CERTIFICATES](#further-training--industry-certificates)
+- [FURTHER TRAINING AND INDUSTRY CERTIFICATES](#further-training-and-industry-certificates)
 - [PUBLICATIONS](#publications)
 
 ## EXECUTIVE SUMMARY
@@ -285,7 +285,7 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 <br>
 **Thesis:** ***Kerberos-based authentication for FTP applications***
 
-## FURTHER TRAINING & INDUSTRY CERTIFICATES
+## FURTHER TRAINING AND INDUSTRY CERTIFICATES
 
 - December 2022 \| AZ-400 Microsoft Certification Exam Pass
 - November 2022 \| [AZ-400 Designing and Implementing Microsoft DevOps Solutions Course](https://learn.microsoft.com/en-us/training/courses/az-400t00)
