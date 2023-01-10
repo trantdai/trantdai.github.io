@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **January 2023***
+*Last updated: **January 2023** - Updated section: **FURTHER TRAINING AND INDUSTRY CERTIFICATES***
 
 ## TABLE OF CONTENTS
 
