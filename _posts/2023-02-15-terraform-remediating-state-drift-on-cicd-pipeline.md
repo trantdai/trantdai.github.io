@@ -13,7 +13,7 @@ tags:
 - akamai
 ---
 
-Today, when I tried to build a TeamCity pipeline in an effort to automate the Akamai Terraform state drift remediation. The pipeline is designed to work as follows:
+Today, when I worked on building a TeamCity pipeline in an effort to automate the Akamai Terraform state drift remediation. The pipeline is designed to work as follows:
 1. It contructs all the `terraform import` commands to import existing Akamai network lists into a Terraform state. This is part of the onboarding process for the network list to be managed via Terraform.
 2. It runs step 1 again to sync the Terraform state with the out of band changes introduced via Akamai Control Center (Web GUI)
 
