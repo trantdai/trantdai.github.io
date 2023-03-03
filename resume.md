@@ -116,7 +116,7 @@ September 2022 - Present \| **[Commonwealth Bank of Australia](https://www.commb
 
 - Undertake the same responsiblities as my previous Senior Cyber Security Automation Engineer role
 - Work as a Solution and Developer Lead as well as a de facto Project Manager for the Akamai Automation Initiative, architecting, designing, implementing, and delivering the Terraform-based Akamai Automation Framework and the self-service Automation function, benefiting business units across the bank
-- Organize and run the Group Security CIO Engineering Talks Forum to foster knowledge sharing, collaboration, effective subject-matter expert (SME) identification and resource allocation, improvements in working methods, and the establishment of new processes within the Security Engineering teams
+- Organize and run the Group Security CIO Engineering Talks Forum to foster knowledge sharing, collaboration, crowd-reviewing, effective subject-matter expert (SME) identification and resource allocation, improvements in working methods, and the establishment of new processes within the Security Engineering teams
 
 #### Senior Cyber Security Automation Engineer
 
