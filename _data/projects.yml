@@ -22,7 +22,7 @@
   link:
   image: https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg
   description: Stay tuned! More detail is coming soon!
-- name: Terraform Based Self Service Portal for Akamai IP/Geo Firewall and CDN ACL Auto Management
-  link:
-  image: https://cdn.pixabay.com/photo/2016/12/02/02/10/idea-1876659_960_720.jpg
-  description: Stay tuned! More detail is coming soon!
+- name: Terraform Based Self Service Oriented Automation Framekwork for Akamai Auto-management
+  link: /blog/terraform-based-self-service-oriented-automation-framework-for-akamai-auto-management
+  image: /assets/images/projects/akamai_logo.png
+  description: Automation framework using DevOps methodology and Akamai provider for Terraform to build self service auto-management solutions
