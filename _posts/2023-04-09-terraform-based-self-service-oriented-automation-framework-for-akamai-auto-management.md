@@ -35,16 +35,6 @@ These building blocks are integrated to create the following workflows:
 - Development workflow
 - Amakai configuration management workflow
 
-# Framework Building Blocks
-- GitHub repositories
-- CI/CD servers
-- Artifactory repositories
-- Docker image repositories
-- Terraform
-- Vault for secret management
-- Akamai services
-- AWS accounts
-
 # Akamai IP/Geo Firewall Self Service Implementation
 
 # Akamai CDN ACL Self Service Implementation Auto Management
