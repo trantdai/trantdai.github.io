@@ -18,7 +18,7 @@ tags:
 ![Akamai Automation Framework](/assets/images/blog/terraform_akamai_automation.drawio.svg "Akamai Automation Framework")
 <br>
 <br>
-The framework architecture is built upon the following building blocks:
+The framework architecture is built upon the following building blocks and tools:
 - Terraform
 - Akamai provider for Terraform
 - Akamai CLI Terraform
@@ -28,7 +28,7 @@ The framework architecture is built upon the following building blocks:
 - Artifactory repositories
 - Docker repositories
 - Vault
-- AWS S3 and DynamoDB tables
+- AWS services including CloudFormation, IAM service accounts, roles, AWS S3 and DynamoDB tables
 
 These building blocks are integrated to create the following types of workflows:
 - Infrastructure administrative workflows
@@ -60,7 +60,15 @@ The state locking is acquired and released before and after the Terraform operat
 
 ## Terraform Docker Image Pipeline
 
-This pipeline build a Docker image that is run as a Docker container in the other pipelines. This Docker image is versioned and pushed to a internal Docker registry.
+The pipeline builds a Docker image that is used as a Docker container in the other pipelines. This Docker image is versioned and pushed to a internal Docker registry.
+
+The pipeline is integrated with a GitHub repository that has the following structure:
+
+- Directory `requirements` consists of text files that store the versions of the tools Akamai CLI, Akamai CLI Terraform, AWS CLI, internal root CA bundle, required OS packages, PyPI packages, Terraform, Terraform providers including Akamai provider, Terraform linting and code security scanners.
+- Directory `scripts` contains a shell script to install the list of the Terraform providers whose versions are fetched from the above Terraform provider text file
+- Dockerfile
+- CODEOWNERS
+- Markdown files: CHANGELOG.md, CONTRIBUTING.md, README.md
 
 The CI phase of the pipeline triggered when change makers introduce updates to the code base via a change branch (`feature/*`, `bugfix/*`, `hotfix/*`) performs the following build steps:
 
@@ -87,7 +95,14 @@ The merge of this pull request performs the following build steps:
 
 ## Automation Code Pipeline
 
-This pipeline consists of the following build steps to eventually package the Terraform code into a tar.gz compressed file and push it to an Artifactory repository:
+This pipeline is integrated with a GitHub repository that has the following structure:
+- Directory `appsec` is used to store Terraform code for Akamai WAF configuration management
+- Directory `network-list` is used to store Terraform code for Akamai Network List (IP/Geo Firewall) configuration management
+- Directory `property` is used to store Terraform code for Akamai property (CDN) configuration management
+- Directory `scripts` is used to store some Python scripts that used automate some pipeline tasks
+- Security scanning as code configuration file for the static application security testing
+
+The pipeline consists of the following build steps to eventually package the Terraform code into a tar.gz compressed file and push it to an Artifactory repository:
 1. Retrieve Artifactory credential (username and API key) for authentication with the Artifactory. This step is executed in both CI and CD phases.
 2. Perform quality assurance and security scanning for the updated modules. This step is triggered when changes are submitted to a change branch in the CI phase only
    - Run a Python script to identify all directories of the updated modules
@@ -98,6 +113,8 @@ This pipeline consists of the following build steps to eventually package the Te
 5. Package the updated modules using the commands `find`, `tar`, `gzip`, and push it to the Artifactory using the `curl` command. This is executed in the CD phase only.
 
 ## AWS IaC Pipeline
+
+This pipeline is used to manage AWS services as code based on a list of CloudFormation YAML templates.
 
 ## Self Service Portal Pipeline
 
