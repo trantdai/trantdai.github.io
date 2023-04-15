@@ -62,7 +62,7 @@ The state locking is acquired and released before and after the Terraform operat
 
 The pipeline builds a Docker image that is used as a Docker container in the other pipelines. This Docker image is versioned and pushed to a internal Docker registry.
 
-The pipeline is integrated with a GitHub repository that has the following structure:
+The pipeline is integrated with the Terraform Docker GitHub repository that has the following structure:
 
 - Directory `requirements` consists of text files that store the versions of the tools Akamai CLI, Akamai CLI Terraform, AWS CLI, internal root CA bundle, required OS packages, PyPI packages, Terraform, Terraform providers including Akamai provider, Terraform linting and code security scanners.
 - Directory `scripts` contains a shell script to install the list of the Terraform providers whose versions are fetched from the above Terraform provider text file
@@ -95,7 +95,7 @@ The merge of this pull request performs the following build steps:
 
 ## Automation Code Pipeline
 
-This pipeline is integrated with a GitHub repository that has the following structure:
+This pipeline is integrated with the automation code GitHub repository that has the following structure:
 - Directory `appsec` is used to store Terraform code for Akamai WAF configuration management
 - Directory `network-list` is used to store Terraform code for Akamai Network List (IP/Geo Firewall) configuration management
 - Directory `property` is used to store Terraform code for Akamai property (CDN) configuration management
@@ -114,7 +114,14 @@ The pipeline consists of the following build steps to eventually package the Ter
 
 ## AWS IaC Pipeline
 
-This pipeline is used to manage AWS services as code based on a list of CloudFormation YAML templates.
+This pipeline is used to manage AWS services as code through a list of CloudFormation YAML templates stored in the AWS IaC GitHub repository. These templates define the following resources across `development` and `production` AWS accounts:
+- AWS IAM ManagedPolicy for AdminUser, CI/CD, CloudFormation, and TerraformBackEnd roles
+- S3 Terraform state buckets to keep Terraform states managed by the Terraform workload executed on the on-prem CI/CD agents and bucket policies that denies HTTP traffic and allows all access from the relevant VPCs
+- DynamoDB table to enable the Terraform state locking feature and audit log bucket to keep S3 Terraform state bucket access logs
+- VPC interface endpoints that make S3 Terraform states accessible from the on-prem Terraform workload via `AWS Direct Connect`
+- Security group protecting the VPC interface endpoint by allowing only the on-prem Terraform workload to target S3 Terraform states
+
+The other AWS infrastructure services like AWS VPC, routing, KMS and SSM are managed centrally by the cloud platform team.
 
 ## Self Service Portal Pipeline
 
