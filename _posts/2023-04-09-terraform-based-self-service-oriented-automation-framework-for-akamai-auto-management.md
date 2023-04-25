@@ -121,7 +121,50 @@ This pipeline is used to manage AWS services as code through a list of CloudForm
 - VPC interface endpoints that make S3 Terraform states accessible from the on-prem Terraform workload via `AWS Direct Connect`
 - Security group protecting the VPC interface endpoint by allowing only the on-prem Terraform workload to target S3 Terraform states
 
-The other AWS infrastructure services like AWS VPC, routing, KMS and SSM are managed centrally by the cloud platform team.
+This pipeline make use of other AWS infrastructure services like AWS VPC, routing, KMS and SSM that are managed centrally by different platform pipelines.
+
+## Onboarding and Out-of-Band Sync Pipelines
+
+Each Akamai configuration like `network list` (IP/Geo firewalling) and `property` has its own onboarding and OOB sync pipeline to onboard the configuration onto the self service platform and allow for the OOB changes made via Akamai Control Center in case of emergencies.
+
+### Network List Pipeline
+
+This pipeline consist of the following build steps:
+1. Retrieve the configured Akamai API client from Vault
+2. Retrieve all access control groups that are accessible by the provided API client
+3. Retrieve all network list names belonging to a given access control group
+4. Use the above retrieved network list names as the input in the `terraform.tfvars` of the `id-fetch` module to retrieve network list configurations/contents
+   1. Run `terraform apply` in the `id-fetch` module to create a local state
+   2. Run `terraform output -json > netlist_name_id.json`
+   3. Use in-line Python script to load `netlist_name_id.json` into a JSON object through which the network list names and IDs are iterated. They are then put together in a Terraform import command with the format `f"terraform import 'akamai_network_list.network_lists[\"{netlist_name}\"]' {netlist_id}\n"` and written into the file `import.sh`
+   4. Run `import.sh` command to create the local state
+   5. Run commands `terraform show -json > terraform.tfstate.json` and `jq . terraform.tfstate.json` to show the network list contents
+5. Retrieve AWS access key id and secret access key from Vault and load them into the env variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
+6. Use the above AWS credentials to assume `PipelineRole` and update env variables `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_SESSION_TOKEN`:
+   ```
+   aws sts assume-role \
+      --role-arn arn:aws:iam::<aws account id>:role/PipelineRole \
+      --role-session-name spmkeeper@gmail.com > authz.json
+   
+   export AWS_ACCESS_KEY_ID=$(cat authz.json | jq -r ".Credentials.AccessKeyId")
+   export AWS_SECRET_ACCESS_KEY=$(cat authz.json | jq -r ".Credentials.SecretAccessKey")
+   export AWS_SESSION_TOKEN=$(cat authz.json | jq -r ".Credentials.SessionToken")
+   ```
+7. Perform state onboarding or OOB sync
+   1. Perform the workflow as described in the step 4 above to create `import.sh` and `staterm.sh`. The `staterm.sh` consists of the `terraform state rm` commands, one per line with this format `f"terraform state rm 'akamai_network_list.network_lists[\"{netlist_name}\"]'\n"`
+   2. Run `terraform init` with the AWS S3 backend configurations. **Note**: To make this command work, the `S3BackendRole` needs to be configured to allow `PipelineRole` to assume it.
+      ```
+      terraform init -backend-config="bucket=<S3 bucket>" \
+                     -backend-config="key=<terraform state file as S3 object>" \
+                     -backend-config="encryption=true" \
+                     -backend-config="region=<AWS region>" \
+                     -backend-config="dynamodb_table=<AWS DynamoDB table>" \
+                     -backend-config="kms_key_id=<AWS KMS key id>" \
+                     -backend-config="role_arn=<arn:aws:iam::<aws account id>:role/S3BackendRole>" \
+      ```
+   3. If the task is onboarding, run `import.sh`. If the task is OOB syncing, run `staterm.sh` then `import.sh`. These commands will create/update the state on S3.
+
+### Property Pipeline
 
 ## Self Service Portal Pipeline
 
