@@ -166,6 +166,49 @@ This pipeline consist of the following build steps:
 
 ### Property Pipeline
 
+This pipeline consist of the following build steps:
+1. Retrieve the configured Akamai API client from Vault
+2. Retrieve and show property configurations
+   1. Run Akamai CLI Terraform command to pull property configurations including the JSON rules in `property-snippets` and auto-generate Terraform code (`property.tf` and `variables.tf`) and `import.sh`: `akamai-terraform --edgerc $HOME/.edgerc --section default --version <production network active version> <akamai property name>`
+3. Run `import.sh` to create the local state
+4. Convert the state into JSON: `terraform show -json > ./terraform.tfstate.json`
+5. Use `jq -r` command to extract `property name`, `edge hostnames`, `hostnames`, `product id`, `rule format`, staging network active version
+6. Retrieve AWS access key id and secret access key from Vault and load them into the env variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
+7. Use the above AWS credentials to assume `PipelineRole` and update env variables `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_SESSION_TOKEN`:
+   ```
+   aws sts assume-role \
+      --role-arn arn:aws:iam::<aws account id>:role/PipelineRole \
+      --role-session-name spmkeeper@gmail.com > authz.json
+   
+   export AWS_ACCESS_KEY_ID=$(cat authz.json | jq -r ".Credentials.AccessKeyId")
+   export AWS_SECRET_ACCESS_KEY=$(cat authz.json | jq -r ".Credentials.SecretAccessKey")
+   export AWS_SESSION_TOKEN=$(cat authz.json | jq -r ".Credentials.SessionToken")
+   ```
+8. Perform state onboarding or OOB sync
+   1. Download property automation code from Artifactory
+   2. Extract the code and remove `property-snippets`
+   3. Run Akamai CLI Terraform command to pull property configurations including the JSON rules in `property-snippets` and auto-generate Terraform code (`property.tf` and `variables.tf`) and `import.sh`: `akamai-terraform --edgerc $HOME/.edgerc --section default --version <production network active version> <akamai property name>`
+   4. Remove auto-generated `variables.tf`, rename auto-generated `import.sh`, `property.tf` to `import.sh.origin`, `property.tf.origin`
+   5. Git clone the property self service repo and copy the Terraform automation code (generated in step 2) into this directory
+   6. Extract the property id, contract id, group id, version no. from `import.sh.origin` to build new `import.sh` that has the command `terraform import akamai_property.property <property id,contract id,group id,version no.>`
+   7. Run `terraform init` with the AWS S3 backend configurations. **Note**: To make this command work, the `S3BackendRole` needs to be configured to allow `PipelineRole` to assume it.
+      ```
+      terraform init -backend-config="bucket=<S3 bucket>" \
+                     -backend-config="key=<terraform state file as S3 object>" \
+                     -backend-config="encryption=true" \
+                     -backend-config="region=<AWS region>" \
+                     -backend-config="dynamodb_table=<AWS DynamoDB table>" \
+                     -backend-config="kms_key_id=<AWS KMS key id>" \
+                     -backend-config="role_arn=<arn:aws:iam::<aws account id>:role/S3BackendRole>" \
+      ```
+   8. Create `staterm.sh` that will be used for the OOB sync case
+      1. Run `terraform state list > property_state_list.txt`
+      2. Create in-line Python file to extract lines that starts with `akamai_edge_hostname.edge_hostnames` or `akamai_property.property` using regex
+      3. create `staterm.sh` that has lines in the format `terraform state rm 'akamai_edge_hostname.edge_hostnames<>'` or `terraform state rm 'akamai_property.property<>'` to remove those resources
+   9.  If the task is to perform the OOB sync, run `staterm.sh` and `import.sh`. Otherwise, only run `import.sh`
+   10. Git clone the property self service repo into another directory, create an onboarding or OOB sync branch using git commands, copy the newly created `property-snippets` directory into this branch, extract the active version from state and replace version in `terraform.tfvars` with it, and finally perform `git add`, `git commit`, and `git push` to push updates to the new branch
+   11. Create a pull request from that branch to the main branch. The merge of this PR will trigger the pipeline to apply changes to Akamai networks.
+
 ## Self Service Portal Pipeline
 
 ## Self Service Portal Use Cases
