@@ -104,7 +104,7 @@ This pipeline is integrated with the automation code GitHub repository that has 
 
 The pipeline consists of the following build steps to eventually package the Terraform code into a tar.gz compressed file and push it to an Artifactory repository:
 1. Retrieve Artifactory credential (username and API key) for authentication with the Artifactory. This step is executed in both CI and CD phases.
-2. Perform quality assurance and security scanning for the updated modules. This step is triggered when changes are submitted to a change branch in the CI phase only
+2. Perform quality assurance and security scanning for the updated modules. This step is triggered when changes are submitted to a change branch in the CI phase only<br>
    - Run a Python script to identify all directories of the updated modules
    - Cd into each directory to run `terraform init`, `terraform validate`, Terraform linting and code security scanning
    - Fail the build if any of the above commands produces non-zero exit
@@ -116,7 +116,7 @@ The pipeline consists of the following build steps to eventually package the Ter
 
 This pipeline is used to manage AWS services as code through a list of CloudFormation YAML templates stored in the AWS IaC GitHub repository. These templates define the following resources in a CloudFormation nested stack across `development` and `production` AWS accounts:
 - AWS IAM ManagedPolicy for AdminRole, PipelineRole, CloudFormationRole, and S3BackendRole roles
-  - The `PipelineRole` has only enough permissions to:
+  - The `PipelineRole` has only enough permissions to:<br>
     - retrieve the CloudFormation templates from a central S3 bucket
     - create, update and delete CloudFormation stacks
     - Pass role to `CloudFormationRole` via action `iam:PassRole`
@@ -176,11 +176,11 @@ This pipeline consist of the following build steps:
 1. Retrieve the configured Akamai API client from Vault
 2. Retrieve and show property configurations
    1. Run Akamai CLI Terraform command to pull property configurations including the JSON rules in `property-snippets` and auto-generate Terraform code (`property.tf` and `variables.tf`) and `import.sh`: `akamai-terraform --edgerc $HOME/.edgerc --section default --version <production network active version> <akamai property name>`
-3. Run `import.sh` to create the local state
-4. Convert the state into JSON: `terraform show -json > ./terraform.tfstate.json`
-5. Use `jq -r` command to extract `property name`, `edge hostnames`, `hostnames`, `product id`, `rule format`, staging network active version
-6. Retrieve AWS access key id and secret access key from Vault and load them into the env variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
-7. Use the above AWS credentials to assume `PipelineRole` and update env variables `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_SESSION_TOKEN`:
+   2. Run `import.sh` to create the local state
+   3. Convert the state into JSON: `terraform show -json > ./terraform.tfstate.json`
+   4. Use `jq -r` command to extract `property name`, `edge hostnames`, `hostnames`, `product id`, `rule format`, staging network active version
+3. Retrieve AWS access key id and secret access key from Vault and load them into the env variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
+4. Use the above AWS credentials to assume `PipelineRole` and update env variables `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_SESSION_TOKEN`:
    ```
    aws sts assume-role \
       --role-arn arn:aws:iam::<aws account id>:role/PipelineRole \
@@ -190,7 +190,7 @@ This pipeline consist of the following build steps:
    export AWS_SECRET_ACCESS_KEY=$(cat authz.json | jq -r ".Credentials.SecretAccessKey")
    export AWS_SESSION_TOKEN=$(cat authz.json | jq -r ".Credentials.SessionToken")
    ```
-8. Perform state onboarding or OOB sync
+5. Perform state onboarding or OOB sync
    1. Download property automation code from Artifactory
    2. Extract the code and remove `property-snippets`
    3. Run Akamai CLI Terraform command to pull property configurations including the JSON rules in `property-snippets` and auto-generate Terraform code (`property.tf` and `variables.tf`) and `import.sh`: `akamai-terraform --edgerc $HOME/.edgerc --section default --version <production network active version> <akamai property name>`
@@ -213,7 +213,7 @@ This pipeline consist of the following build steps:
       3. create `staterm.sh` that has lines in the format `terraform state rm 'akamai_edge_hostname.edge_hostnames<>'` or `terraform state rm 'akamai_property.property<>'` to remove those resources
    9.  If the task is to perform the OOB sync, run `staterm.sh` and `import.sh`. Otherwise, only run `import.sh`
    10. Git clone the property self service repo into another directory, create an onboarding or OOB sync branch using git commands, copy the newly created `property-snippets` directory into this branch, extract the active version from state and replace version in `terraform.tfvars` with it, and finally perform `git add`, `git commit`, and `git push` to push updates to the new branch
-   11. Create a pull request from that branch to the main branch. The merge of this PR will trigger the pipeline to apply changes to Akamai networks.
+6. Create a pull request from that branch to the main branch. The merge of this PR will trigger the pipeline to apply changes to Akamai networks.
 
 ## Self Service Portal Use Cases
 
