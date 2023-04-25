@@ -1,5 +1,5 @@
 ---
-title: Terraform Based Self Service Oriented Automation Framekwork for Akamai Auto-management
+title: Terraform Based Self Service Oriented Automation Framework for Akamai Auto-management
 layout: post
 post-image: "/assets/images/projects/akamai_logo.svg"
 description: Automation framework using DevOps methodology and Akamai provider for Terraform to build self service auto-management solutions
@@ -114,8 +114,13 @@ The pipeline consists of the following build steps to eventually package the Ter
 
 ## AWS IaC Pipeline
 
-This pipeline is used to manage AWS services as code through a list of CloudFormation YAML templates stored in the AWS IaC GitHub repository. These templates define the following resources across `development` and `production` AWS accounts:
-- AWS IAM ManagedPolicy for AdminUser, CI/CD, CloudFormation, and TerraformBackEnd roles
+This pipeline is used to manage AWS services as code through a list of CloudFormation YAML templates stored in the AWS IaC GitHub repository. These templates define the following resources in a CloudFormation nested stack across `development` and `production` AWS accounts:
+- AWS IAM ManagedPolicy for AdminRole, PipelineRole, CloudFormationRole, and S3BackendRole roles
+  - The `PipelineRole` has only enough permissions to:
+    - retrieve the CloudFormation templates from a central S3 bucket
+    - create, update and delete CloudFormation stacks
+    - Pass role to `CloudFormationRole` via action `iam:PassRole`
+  - The `CloudFormationRole` has all the required permissions to manage S3 buckets, DynamoDB tables, VPC interface endpoints and security groups
 - S3 Terraform state buckets to keep Terraform states managed by the Terraform workload executed on the on-prem CI/CD agents and bucket policies that denies HTTP traffic and allows all access from the relevant VPCs
 - DynamoDB table to enable the Terraform state locking feature and audit log bucket to keep S3 Terraform state bucket access logs
 - VPC interface endpoints that make S3 Terraform states accessible from the on-prem Terraform workload via `AWS Direct Connect`
@@ -163,6 +168,7 @@ This pipeline consist of the following build steps:
                      -backend-config="role_arn=<arn:aws:iam::<aws account id>:role/S3BackendRole>" \
       ```
    3. If the task is onboarding, run `import.sh`. If the task is OOB syncing, run `staterm.sh` then `import.sh`. These commands will create/update the state on S3.
+8. Replace the network list configurations/contents in the `terraform.tfvars` with what retrieved in step 4 via a feature branch. Merge the feature branch into the main branch that triggers the CD pipeline to complete the final config sync.  
 
 ### Property Pipeline
 
@@ -209,10 +215,12 @@ This pipeline consist of the following build steps:
    10. Git clone the property self service repo into another directory, create an onboarding or OOB sync branch using git commands, copy the newly created `property-snippets` directory into this branch, extract the active version from state and replace version in `terraform.tfvars` with it, and finally perform `git add`, `git commit`, and `git push` to push updates to the new branch
    11. Create a pull request from that branch to the main branch. The merge of this PR will trigger the pipeline to apply changes to Akamai networks.
 
-## Self Service Portal Pipeline
-
 ## Self Service Portal Use Cases
 
 ### Akamai IP/Geo Firewall Self Service Portal
 
+After the onboarding, the network list configurations are managed via `terraform.tfvars`. To make changes, a change maker needs to create a feature branch and modifies the content of `terraform.tfvars`. That triggers a CI pipeline that run `terraform plan` to show the planned changes. The merge of the pull request from the feature branch to the main branch triggers the CD/implementation pipeline that applies changes to Akamai networks.
+
 ### Akamai CDN ACL Self Service Portal
+
+After the onboarding, the CDN ACL configurations are managed via JSON files in `property-snippets`. To make changes, a change maker needs to create a feature branch and modifies the content of the relevant JSON files. That triggers a CI pipeline that run `terraform plan` to show the planned changes. The merge of the pull request from the feature branch to the main branch triggers the CD/implementation pipeline that applies changes to Akamai networks.
