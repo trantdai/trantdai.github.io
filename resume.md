@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **January 2023** - Updated section: **FURTHER TRAINING AND INDUSTRY CERTIFICATES***
+*Last updated: **April 2023** - Updated section(s): **FURTHER TRAINING AND INDUSTRY CERTIFICATES & INDUSTRY EXPERIENCE***
 
 ## TABLE OF CONTENTS
 
@@ -42,6 +42,7 @@ permalink: "/resume"
 - [CORE TECHNICAL COMPETENCIES](#core-technical-competencies)
 - [RECOGNISED ACHIEVEMENTS](#recognised-achievements)
 - [INDUSTRY EXPERIENCE](#industry-experience)
+    - [Staff Security Engineer - Security Automation](#staff-security-engineer---security-automation)
     - [Senior Engineer - Security Automation](#senior-engineer---security-automation)
     - [Senior Cyber Security Automation Engineer](#senior-cyber-security-automation-engineer)
     - [Technology Owner - Firewall Automation](#technology-owner---firewall-automation)
@@ -108,13 +109,30 @@ Recognized for professionalism, positive mental attitude, commitment to excellen
 
 ## INDUSTRY EXPERIENCE
 
+#### Staff Security Engineer - Security Automation
+
+April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.com.au/)** - 30,001+ Employees
+
+**Responsibilities**
+
+- Utilise strong understanding of core business and technical strategies to deliver best business outcomes through technical implementation.
+- Develop the technical strategy, overseeing medium to complex engineering initiatives.
+- Create designs and solutions that can be leveraged by the broader team to implement product or technology strategies.
+- Proactively identify risks to achieving timely delivery, effectively communicating and adjusting plans to achieve goals.
+- Mentor and up-skill other engineering teams across different squads.
+- Define project stretch goals and success measures, holding the squad accountable.
+- Communicate the security engineering vision in a way that inspires across the Group.
+- Independently complete design and threat modelling.
+- Drive the development of strategic programs of work, including proof of concept developments.
+- Contribute to internal online discussions around security engineering, delivery and technology (for example blog posts and knowledge based articles).
+
 #### Senior Engineer - Security Automation
 
 September 2022 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.com.au/)** - 30,001+ Employees
 
 **Responsibilities**
 
-- Undertake the same responsiblities as my previous Senior Cyber Security Automation Engineer role
+- Undertake the same responsibilities as my previous Senior Cyber Security Automation Engineer role
 - Work as a Solution and Developer Lead as well as a de facto Project Manager for the Akamai Automation Initiative, architecting, designing, implementing, and delivering the Terraform-based Akamai Automation Framework and the self-service Automation function, benefiting business units across the bank
 - Organize and run the Group Security CIO Engineering Talks Forum to foster knowledge sharing, collaboration, crowd-reviewing, effective subject-matter expert (SME) identification and resource allocation, improvements in working methods, and the establishment of new processes within the Security Engineering teams
 
@@ -288,6 +306,7 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING AND INDUSTRY CERTIFICATES
 
+- April 2023 \| Introduction to HashiCorp Consul (Service Mesh) Hands-on Workshop
 - December 2022 \| AZ-400 Microsoft Certification Exam Pass
 - November 2022 \| [AZ-400 Designing and Implementing Microsoft DevOps Solutions Course](https://learn.microsoft.com/en-us/training/courses/az-400t00)
 - October 2022 \| Udemy AWS Certified Security Specialty 2022 (**WIP**)
