@@ -4,6 +4,8 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
+*Last updated: **May 2023** - Updated section(s): **DevSecOps***
+
 ## 📙 DevSecOps
 
 - {: .read-book-li } [Is AWS SAM better than Serverless framework? Let's deploy Ruby Telegram Bot with it!](https://mkdev.me/posts/is-aws-sam-better-than-serverless-framework-let-s-deploy-ruby-telegram-bot-with-it)
