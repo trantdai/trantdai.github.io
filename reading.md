@@ -4,11 +4,15 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
-*Last updated: **May 2023** - Updated section(s): **DevSecOps***
+*Last updated: **May 2023** - Updated section(s): **AWS***
+
+## 📙 AWS
+
+- {: .read-book-li } [Serverless Framework vs SAM vs CDK vs Serverless Stack vs Amplify](https://medium.com/comsystoreply/amplify-vs-serverless-framework-vs-cdk-vs-serverless-stack-vs-sam-a724315e54e6)
+- {: .read-book-li } [Is AWS SAM better than Serverless framework? Let's deploy Ruby Telegram Bot with it!](https://mkdev.me/posts/is-aws-sam-better-than-serverless-framework-let-s-deploy-ruby-telegram-bot-with-it)
 
 ## 📙 DevSecOps
 
-- {: .read-book-li } [Is AWS SAM better than Serverless framework? Let's deploy Ruby Telegram Bot with it!](https://mkdev.me/posts/is-aws-sam-better-than-serverless-framework-let-s-deploy-ruby-telegram-bot-with-it)
 - {: .read-book-li } [Build Python App Using Azure DevOps Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops)
 - {: .read-book-li } [Create Your First Python Azure DevOps Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=python%2Ctfs-2018-2%2Cbrowser)
 - {: .read-book-li } [Announcing GUAC, a great pairing with SLSA (and SBOM)!](https://security.googleblog.com/2022/10/announcing-guac-great-pairing-with-slsa.html?m=1)
