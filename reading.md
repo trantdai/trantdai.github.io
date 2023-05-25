@@ -8,8 +8,8 @@ layout: reading
 
 ## 📙 AWS
 
-- {: .read-book-li } [GitHub Actions on AWS: How to Implement Identity Federation](https://scalesec.com/blog/oidc-for-github-actions-on-aws/)
 - {: .read-book-li } [Connecting Github Actions to AWS using OpenID Connect(OIDC) and securely deploy to AWS](https://blog.devgenius.io/connecting-github-actions-to-aws-using-openid-connect-oidc-and-securely-deploy-to-aws-541f5e320d0d)
+- {: .read-book-li } [GitHub Actions on AWS: How to Implement Identity Federation](https://scalesec.com/blog/oidc-for-github-actions-on-aws/)
 - {: .read-book-li } [Secure AWS deploys from GitHub Actions with OIDC](https://www.eliasbrange.dev/posts/secure-aws-deploys-from-github-actions-with-oidc/)
 - {: .read-book-li } [Use IAM roles to connect GitHub Actions to actions in AWS](https://aws.amazon.com/blogs/security/use-iam-roles-to-connect-github-actions-to-actions-in-aws/)
 - {: .read-book-li } [Serverless Framework vs SAM vs CDK vs Serverless Stack vs Amplify](https://medium.com/comsystoreply/amplify-vs-serverless-framework-vs-cdk-vs-serverless-stack-vs-sam-a724315e54e6)
