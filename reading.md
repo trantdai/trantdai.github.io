@@ -8,6 +8,8 @@ layout: reading
 
 ## 📙 AWS
 
+- {: .read-book-li } [Secure AWS deploys from GitHub Actions with OIDC](https://www.eliasbrange.dev/posts/secure-aws-deploys-from-github-actions-with-oidc/)
+- {: .read-book-li } [Use IAM roles to connect GitHub Actions to actions in AWS](https://aws.amazon.com/blogs/security/use-iam-roles-to-connect-github-actions-to-actions-in-aws/)
 - {: .read-book-li } [Serverless Framework vs SAM vs CDK vs Serverless Stack vs Amplify](https://medium.com/comsystoreply/amplify-vs-serverless-framework-vs-cdk-vs-serverless-stack-vs-sam-a724315e54e6)
 - {: .read-book-li } [Is AWS SAM better than Serverless framework? Let's deploy Ruby Telegram Bot with it!](https://mkdev.me/posts/is-aws-sam-better-than-serverless-framework-let-s-deploy-ruby-telegram-bot-with-it)
 
