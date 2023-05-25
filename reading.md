@@ -8,6 +8,7 @@ layout: reading
 
 ## 📙 AWS
 
+- {: .read-book-li } [GitHub Actions on AWS: How to Implement Identity Federation](https://scalesec.com/blog/oidc-for-github-actions-on-aws/)
 - {: .read-book-li } [Connecting Github Actions to AWS using OpenID Connect(OIDC) and securely deploy to AWS](https://blog.devgenius.io/connecting-github-actions-to-aws-using-openid-connect-oidc-and-securely-deploy-to-aws-541f5e320d0d)
 - {: .read-book-li } [Secure AWS deploys from GitHub Actions with OIDC](https://www.eliasbrange.dev/posts/secure-aws-deploys-from-github-actions-with-oidc/)
 - {: .read-book-li } [Use IAM roles to connect GitHub Actions to actions in AWS](https://aws.amazon.com/blogs/security/use-iam-roles-to-connect-github-actions-to-actions-in-aws/)
@@ -38,6 +39,7 @@ guac](https://github.com/guacsec/guac)
 
 ## 📙 General CyberSecurity
 
+- {: .read-book-li } [OpenID Connect (OIDC)](https://www.pingidentity.com/en/resources/identity-fundamentals/authentication-authorization-standards/openid-connect.html)
 - {: .read-book-li } [(ISC)2 Certified Information Systems Security Professional (CISSP) Official Study Guide, 9th Edition](https://www.amazon.com.au/Certified-Information-Security-Professional-Official/dp/1119786231)
 - {: .read-book-li } [The Art of Invisibility: The World's Most Famous Hacker Teaches You How to Be Safe in the Age of Big Brother and Big Data](https://www.amazon.com.au/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380504)
 
@@ -57,4 +59,3 @@ guac](https://github.com/guacsec/guac)
 - {: .unread-book-li } [26 AWS Security Best Practices to Adopt in Production](https://sysdig.com/blog/26-aws-security-best-practices/)
 - {: .unread-book-li } [Create a resume website in the Browser using HTML, CSS, github.dev, and GitHub Pages](https://github.com/ornelladotcom/resume-website-workshop)
 - {: .unread-book-li } [VS Code Day 2022](https://learn.microsoft.com/en-us/events/vs-code-day-2022/)
-
