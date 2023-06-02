@@ -4,10 +4,11 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
-*Last updated: **May 2023** - Updated section(s): **AWS***
+*Last updated: **May 2023** - Updated section(s): **DevSecOps***
 
 ## 📙 AWS
 
+- {: .read-book-li } [Amazon States Language](https://states-language.net/)
 - {: .read-book-li } [Connecting Github Actions to AWS using OpenID Connect(OIDC) and securely deploy to AWS](https://blog.devgenius.io/connecting-github-actions-to-aws-using-openid-connect-oidc-and-securely-deploy-to-aws-541f5e320d0d)
 - {: .read-book-li } [GitHub Actions on AWS: How to Implement Identity Federation](https://scalesec.com/blog/oidc-for-github-actions-on-aws/)
 - {: .read-book-li } [Secure AWS deploys from GitHub Actions with OIDC](https://www.eliasbrange.dev/posts/secure-aws-deploys-from-github-actions-with-oidc/)
@@ -17,6 +18,7 @@ layout: reading
 
 ## 📙 DevSecOps
 
+- {: .read-book-li } [DevSecOps: 8 Essential Elements for Your DevSecOps Program](https://www.aquasec.com/cloud-native-academy/devsecops/devsecops/)
 - {: .read-book-li } [Build Python App Using Azure DevOps Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops)
 - {: .read-book-li } [Create Your First Python Azure DevOps Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=python%2Ctfs-2018-2%2Cbrowser)
 - {: .read-book-li } [Announcing GUAC, a great pairing with SLSA (and SBOM)!](https://security.googleblog.com/2022/10/announcing-guac-great-pairing-with-slsa.html?m=1)
