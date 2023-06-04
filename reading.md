@@ -4,7 +4,7 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
-*Last updated: **May 2023** - Updated section(s): **DevSecOps***
+*Last updated: **May 2023** - Updated section(s): **Kubernetes & AWS***
 
 ## 📙 Kubernetes
 
@@ -12,6 +12,7 @@ layout: reading
 
 ## 📙 AWS
 
+- {: .read-book-li } [How to choose the right API Gateway auth method](https://theburningmonk.com/2020/06/how-to-choose-the-right-api-gateway-auth-method/)
 - {: .read-book-li } [Amazon States Language](https://states-language.net/)
 - {: .read-book-li } [Connecting Github Actions to AWS using OpenID Connect(OIDC) and securely deploy to AWS](https://blog.devgenius.io/connecting-github-actions-to-aws-using-openid-connect-oidc-and-securely-deploy-to-aws-541f5e320d0d)
 - {: .read-book-li } [GitHub Actions on AWS: How to Implement Identity Federation](https://scalesec.com/blog/oidc-for-github-actions-on-aws/)
