@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **April 2023** - Updated section(s): **FURTHER TRAINING AND INDUSTRY CERTIFICATES & INDUSTRY EXPERIENCE***
+*Last updated: **June 2023** - Updated section(s): **INDUSTRY EXPERIENCE & FURTHER TRAINING AND INDUSTRY CERTIFICATES AND INDUSTRY EXPERIENCE***
 
 ## TABLE OF CONTENTS
 
@@ -125,6 +125,14 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 - Independently complete design and threat modelling.
 - Drive the development of strategic programs of work, including proof of concept developments.
 - Contribute to internal online discussions around security engineering, delivery and technology (for example blog posts and knowledge based articles).
+
+**Programs and Initiatives**
+
+| Program/Initiative                             | Role                                      |
+| ---------------------------------------------- | ----------------------------------------- |
+| Security as an API                             | Technical/Solution Lead                   |
+| Terraform based self-service Akamai automation | Group Cybersecurity AppSec Champion       |
+| DevSecOps                                      | Group Cybersecurity AppSec Champion       |
 
 #### Senior Engineer - Security Automation
 
@@ -306,6 +314,7 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING AND INDUSTRY CERTIFICATES
 
+- June 2023 \| [Developing on AWS](https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=JXI7sfsPjU2hd8CDOqM-9w2)
 - April 2023 \| Introduction to HashiCorp Consul (Service Mesh) Hands-on Workshop
 - December 2022 \| AZ-400 Microsoft Certification Exam Pass
 - November 2022 \| [AZ-400 Designing and Implementing Microsoft DevOps Solutions Course](https://learn.microsoft.com/en-us/training/courses/az-400t00)
@@ -323,10 +332,12 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 - February 2022 \| Microsoft OpenHack: Security, Compliance, and Identity
 - November 2021 \| SC-300 Microsoft Identity and Access Administrator Course
 - November 2021 \| SC-900 Microsoft Security, Compliance, and Identity Fundamentals Course
+- October 2021 \| [AWS Security Fundamentals (Second Edition)](https://explore.skillbuilder.aws/learn/course/external/view/elearning/48/aws-security-fundamentals-second-edition) with [Certificate of Completion](https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=DCgS_QVpLEmrhEVe_PHzxg2)
 - March 2021 \| Microsoft Certified Azure Security Engineer Associate
 - March 2021 \| Linux Academy's AZ-500: Microsoft Azure Security Technologies Course
 - February 2021 \| Microsoft Certified Azure Fundamentals
 - February 2021 \| Certified SAFe® 5 Practitioner
+- December 2020 \| [AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials)
 - July 2020 \| Linux Academy's AWS Essentials Course
 - July 2020 \| Linux Academy's LPI Linux Essentials Course
 - July 2020 \| Certified Ethical Hacker (CEH) Certification
