@@ -6,6 +6,10 @@ layout: reading
 
 *Last updated: **May 2023** - Updated section(s): **DevSecOps***
 
+## 📙 Kubernetes
+
+- {: .read-book-li } [Understanding networking in Kubernetes](https://www.learncloudnative.com/blog/2023-05-31-kubeproxy-iptables)
+
 ## 📙 AWS
 
 - {: .read-book-li } [Amazon States Language](https://states-language.net/)
