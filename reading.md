@@ -4,7 +4,7 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
-*Last updated: **May 2023** - Updated section(s): **Kubernetes & AWS***
+*Last updated: **June 2023** - Updated section(s): **Kubernetes & AWS***
 
 ## 📙 Kubernetes
 
@@ -12,6 +12,7 @@ layout: reading
 
 ## 📙 AWS
 
+- {: .read-book-li } [learn-cantrill-io-labs](https://github.com/trantdai/learn-cantrill-io-labs)
 - {: .read-book-li } [How to choose the right API Gateway auth method](https://theburningmonk.com/2020/06/how-to-choose-the-right-api-gateway-auth-method/)
 - {: .read-book-li } [Amazon States Language](https://states-language.net/)
 - {: .read-book-li } [Connecting Github Actions to AWS using OpenID Connect(OIDC) and securely deploy to AWS](https://blog.devgenius.io/connecting-github-actions-to-aws-using-openid-connect-oidc-and-securely-deploy-to-aws-541f5e320d0d)
@@ -23,6 +24,7 @@ layout: reading
 
 ## 📙 DevSecOps
 
+- {: .read-book-li } [Security Scanning in GitHub CI/CD workflow using Trivy](https://devopscounsel.com/security-scanning-in-github-ci-cd-workflow-using-trivy/)
 - {: .read-book-li } [DevSecOps: 8 Essential Elements for Your DevSecOps Program](https://www.aquasec.com/cloud-native-academy/devsecops/devsecops/)
 - {: .read-book-li } [Build Python App Using Azure DevOps Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops)
 - {: .read-book-li } [Create Your First Python Azure DevOps Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=python%2Ctfs-2018-2%2Cbrowser)
