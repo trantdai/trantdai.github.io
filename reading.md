@@ -4,7 +4,7 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
-*Last updated: **June 2023** - Updated section(s): **Kubernetes & AWS***
+*Last updated: **June 2023** - Updated section(s): **Python***
 
 ## 📙 Kubernetes
 
@@ -44,6 +44,9 @@ guac](https://github.com/guacsec/guac)
 - {: .read-book-li } [Visual Studio Code Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
 ## 📙 Python
+- {: .read-book-li } [Structuring Your Python Project](https://docs.python-guide.org/writing/structure/)
+- {: .read-book-li } [Tutorial on managing a Python project](https://github.com/yngvem/python-project-structure)
+- {: .read-book-li } [Set up your Python project](https://goodresearch.dev/setup.html)
 - {: .read-book-li } [The Ultimate Python Cheat Sheet](https://www.linkedin.com/feed/update/urn:li:activity:6977291893848084480/)
 
 ## 📙 General CyberSecurity
