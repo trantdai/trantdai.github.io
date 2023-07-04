@@ -128,7 +128,7 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 
 **Programs and Initiatives**
 
-| <span style="color:#ffdd57">Program/Initiative</span>      | <span style="color:#ffdd57">Role</span>                      |
+| <span style="color:#ffdd57">Program/Initiative</span>   | <span style="color:#ffdd57">Role</span>                  |
 | ------------------------------------------------------- | -------------------------------------------------------- |
 | Firewall policy change review and management automation | Technical/solution lead                                  |
 | Security as an API                                      | Technical/solution lead                                  |
