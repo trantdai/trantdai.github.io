@@ -128,11 +128,12 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 
 **Programs and Initiatives**
 
-| Program/Initiative                             | Role                                                     |
-| ---------------------------------------------- | -------------------------------------------------------- |
-| Security as an API                             | Technical/solution lead                                  |
-| Terraform based self-service Akamai automation | De facto project manager & technical/solution lead       |
-| DevSecOps                                      | Group Cybersecurity AppSec champion                      |
+| <span style="color:blue">Program/Initiative</span>      | <span style="color:blue">Role/span>                      |
+| ------------------------------------------------------- | -------------------------------------------------------- |
+| Firewall policy change review and management automation | Technical/solution lead                                  |
+| Security as an API                                      | Technical/solution lead                                  |
+| Terraform based self-service Akamai automation          | De facto project manager & technical/solution lead       |
+| DevSecOps                                               | Group Cybersecurity AppSec champion                      |
 
 #### Senior Engineer - Security Automation
 
