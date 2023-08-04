@@ -9,6 +9,7 @@ tags:
 - jumphost
 - bastion
 - blog
+- intra-vpc routing
 ---
 
 # Problem Statement
@@ -131,3 +132,22 @@ These machines are deployed as follows:
 - Re-use the same key pair for SSH access
 
 After that confirm that these instances are accessible via SSH from the Bastion.
+
+# Appendix
+
+## AWS Routing
+
+### Routing between subnets inside of a local VPC
+
+By default, each VPC comes with 1 route table pre-configured with a “local” route. The scope of the “local” route is only within the subnet defined for the entire VPC. For example, if your VPC was set up to have the address space of 172.16.0.0/16, your “local” route would be defined as “172.16.0.0/16”. This allows all of the resources created within the VPC to talk to each other without any additional configuration. You cannot delete the “local” route from your route table, and anytime a new route table is created within a VPC, the “local” route is included by default.
+
+Within a VPC, route tables are assigned to individual subnets. With only 1 route table created in a VPC, all of the subnets would be assigned to that route table. You can create multiple route tables in a VPC, or you can leave the 1 default route table.
+
+### 2-tier routing tables (1 for public subnets, and 1 for private subnets)
+
+For environments that are broken apart into public and private subnets, it is best practice to have 1 route table for public subnets, and 1 route table for private subnets.
+In this scenario, you will need to further separate your route tables into availability zones, as well. The reason for this is: you will want systems in AZ A to use a NAT gateway and any other systems which are also within that AZ; same for systems in AZ B. This ensures that if one availability zone becomes unavailable, the systems in the other availability zone are not relying on a system that is now non-functional. The diagram below shows this configuration.
+
+# References
+
+1. [AWS Routing 101](https://medium.com/@mda590/aws-routing-101-67879d23014d)
