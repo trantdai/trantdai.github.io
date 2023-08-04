@@ -1,7 +1,7 @@
 ---
 title: AWS EC2 Jumphost Setup
 layout: post
-post-image: "/assets/images/blog/aws_logo.svg"
+post-image: "/assets/images/blog/aws_logo.png"
 description: Set up Jumphost/Bastion to access private subnets from Internet
 tags:
 - aws
