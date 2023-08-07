@@ -34,6 +34,8 @@ Create the VPC with the following settings:
 
 ### Network ACL
 
+This NACL is the main NACL of the VPC and thus control all the inbound and outbound traffic to and from VPC subnets.
+
 #### Inbound Rules
 
 | Type | Protocol | Port range | Source | Allow/Deny | Comment                               |
@@ -66,32 +68,32 @@ Create `Public RT` for the two public subnets with two routes:
 
 ### Security Groups
 
-#### Public Security Group
+#### ALB Security Group
 
-Create security group `sg-pubsub` for public subnets with the following rules:
+Create security group `sg-alb` for restricting inbound web traffic with the following rules:
 
 **Inbound**
 
 | Type | Protocol | Port range | Source | Allow/Deny | Comment                               |
 | ---- | -------- | ---------- | ------ | ---------- | ------------------------------------- |
-| HTTP  | TCP     | 80         | 0.0.0.0/0 | Allow   | Allow access to static webpage on jumphost |
-| SSH  | TCP      | 22         | 0.0.0.0/0 | Allow   | Allow SSH to jumphosts                |
+| HTTP | TCP      | 80         | 0.0.0.0/0 | Allow   | Allow HTTP requests to ALB            |
+| SSH  | TCP      | 443         | 0.0.0.0/0 | Allow   | Allow HTTPs from jumphosts             |
 
 **Outbound**
 
-| Type         | Protocol | Port range | Source    | Allow/Deny | Comment                               |
-| -----------  | -------- | ---------- | --------- | ---------- | ------------------------------------- |
-| All traffic  | All      | All        | 0.0.0.0/0 | Allow      | Allow access Internet                 |
+Not needed as security groups are stateful.
 
-#### Public Security Group
+#### Private Security Group
 
-Create security group `sg-pubsub` for public subnets with the following rules:
+Create security group `sg-ec2` for EC2 instances including the jumphost with the following rules:
 
 **Inbound**
 
 | Type | Protocol | Port range | Source | Allow/Deny | Comment                               |
 | ---- | -------- | ---------- | ------ | ---------- | ------------------------------------- |
-| SSH  | TCP      | 22         | 0.0.0.0/0 | Allow   | Allow SSH from jumphosts                |
+| HTTP  | TCP     | 80         | 0.0.0.0/0 | Allow   | Allow access to static webpage on jumphost (deployed when there is no ALB) |
+| HTTP  | TCP     | 80         | sg-alb | Allow      | Allow access to static webpage from ALB |
+| SSH  | TCP      | 22         | 0.0.0.0/0 | Allow   | Allow SSH to jumphosts                |
 
 **Outbound**
 
@@ -110,6 +112,7 @@ This machine is deployed as follows:
 - Assign a public IP address for SSH and web inbound access
 - Assign a private IP address in the public subnet for the SSH access to the other EC2 instances in the private networks
 - Create a key pair for SSH access
+- Associate the security group `sg-ec2` to it
 
 #### Setup
 
@@ -130,8 +133,20 @@ These machines are deployed as follows:
 
 - Assign a private IP address in the private subnet for the SSH access from the Bastion
 - Re-use the same key pair for SSH access
+- Associate the security group `sg-ec2` to it
+- Enter the following initial script in `User data` of the `Advanced details` section to turn these instances into the static webservers:
 
-After that confirm that these instances are accessible via SSH from the Bastion.
+```bash
+#!/bin/bash
+sudo yum update -y
+sudo yum install -y httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo chown -R $USER:$USER /var/wwww
+echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+```
+
+After that confirm that these instances are accessible via SSH from the Bastion. The static webpages are also accessible using the public IPs of the instances (or ALB FQDN if it's deployed).
 
 # Appendix
 
