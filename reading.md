@@ -6,6 +6,10 @@ layout: reading
 
 *Last updated: **June 2023** - Updated section(s): **Python***
 
+## 📙 AI & Machine Learning & Data Science
+
+- {: .read-book-li } [Travis, your AI-powered tutor!](https://aigents.co/learn)
+
 ## 📙 Kubernetes
 
 - {: .read-book-li } [Understanding networking in Kubernetes](https://www.learncloudnative.com/blog/2023-05-31-kubeproxy-iptables)
@@ -44,6 +48,8 @@ guac](https://github.com/guacsec/guac)
 - {: .read-book-li } [Visual Studio Code Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
 ## 📙 Python
+
+- {: .read-book-li } [Travis, Python AI-powered tutor!](https://aigents.co/learn)
 - {: .read-book-li } [Structuring Your Python Project](https://docs.python-guide.org/writing/structure/)
 - {: .read-book-li } [Tutorial on managing a Python project](https://github.com/yngvem/python-project-structure)
 - {: .read-book-li } [Set up your Python project](https://goodresearch.dev/setup.html)
