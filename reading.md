@@ -4,7 +4,7 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
-*Last updated: **June 2023** - Updated section(s): **Python***
+*Last updated: **September 2023** - Updated section(s): **AI & Machine Learning & Data Science***
 
 ## 📙 AI & Machine Learning & Data Science
 
