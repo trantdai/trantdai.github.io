@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **July 2023** - Updated section(s): **INDUSTRY EXPERIENCE***
+*Last updated: **September 2023** - Updated section(s): **FURTHER TRAINING AND INDUSTRY CERTIFICATES***
 
 ## TABLE OF CONTENTS
 
@@ -315,12 +315,13 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING AND INDUSTRY CERTIFICATES
 
+- September 2023 \| [AWS Certified Developer – Associate](https://www.credly.com/badges/4fbb8332-66a4-4977-bd5a-45b10d54b92a/linked_in_profile)
 - June 2023 \| [Developing on AWS](https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=JXI7sfsPjU2hd8CDOqM-9w2)
 - April 2023 \| Introduction to HashiCorp Consul (Service Mesh) Hands-on Workshop
 - December 2022 \| AZ-400 Microsoft Certification Exam Pass
 - November 2022 \| [AZ-400 Designing and Implementing Microsoft DevOps Solutions Course](https://learn.microsoft.com/en-us/training/courses/az-400t00)
 - October 2022 \| Udemy AWS Certified Security Specialty 2022 (**WIP**)
-- October 2022 \| Udemy Ultimate AWS Certified Developer Associate 2022 - NEW! (**WIP**)
+- October 2022 \| Udemy Ultimate AWS Certified Developer Associate 2022 - NEW!
 - September 2022 \| Agile Programming Techniques Training
 - September 2022 \| GitHub for Developers Training
 - August 2022 \| Containers and Kubernetes with Red Hat OpenShift Platform Training
