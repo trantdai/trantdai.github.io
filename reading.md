@@ -4,10 +4,18 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
-*Last updated: **September 2023** - Updated section(s): **AI & Machine Learning & Data Science***
+*Last updated: **January 2024** - Updated section(s): **AI & Machine Learning & Data Science and DevSecOps***
 
 ## 📙 AI & Machine Learning & Data Science
 
+- {: .read-book-li } [Hands-on LLMs Course - Learn to Train and Deploy a Real-Time Financial Advisor](https://github.com/iusztinpaul/hands-on-llms)
+- {: .read-book-li } [AI Notes](https://github.com/swyxio/ai-notes)
+- {: .read-book-li } [Building a PDF Knowledge Bot With Open-Source LLMs - A Step-by-Step Guide](https://www.shakudo.io/blog/build-pdf-bot-open-source-llms)
+- {: .read-book-li } [txtai - All-in-one embeddings database](https://github.com/neuml/txtai)
+- {: .read-book-li } [Building a Multi-Document Reader and Chatbot With LangChain and ChatGPT](https://betterprogramming.pub/building-a-multi-document-reader-and-chatbot-with-langchain-and-chatgpt-d1864d47e339)
+- {: .read-book-li } [Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models](https://github.com/llmware-ai/llmware)
+- {: .read-book-li } [Create an Azure OpenAI, LangChain, ChromaDB, and Chainlit chat app in AKS using Terraform](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/create-an-azure-openai-langchain-chromadb-and-chainlit-chat-app/ba-p/4024070)
+- {: .read-book-li } [Large Language Model Course](https://github.com/trantdai/llm-course)
 - {: .read-book-li } [Travis, your AI-powered tutor!](https://aigents.co/learn)
 
 ## 📙 Kubernetes
@@ -28,6 +36,7 @@ layout: reading
 
 ## 📙 DevSecOps
 
+- {: .read-book-li } [DevOps Exercises](https://github.com/bregman-arie/devops-exercises)
 - {: .read-book-li } [Security Scanning in GitHub CI/CD workflow using Trivy](https://devopscounsel.com/security-scanning-in-github-ci-cd-workflow-using-trivy/)
 - {: .read-book-li } [DevSecOps: 8 Essential Elements for Your DevSecOps Program](https://www.aquasec.com/cloud-native-academy/devsecops/devsecops/)
 - {: .read-book-li } [Build Python App Using Azure DevOps Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops)
