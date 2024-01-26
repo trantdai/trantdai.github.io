@@ -8,6 +8,9 @@ layout: reading
 
 ## 📙 AI & Machine Learning & Data Science
 
+- {: .read-book-li } [Generative AI with Enterprise Data](https://medium.com/@Sachin.Kulkarni.NL/generative-ai-with-enterprise-data-3c81a8bffaf2)
+- {: .read-book-li } [Comprehensive guide to building a custom Generative AI enterprise app](https://www.linkedin.com/pulse/comprehensive-guide-building-custom-generative-ai-enterprise-kumar/)
+- {: .read-book-li } [Quickly build high-accuracy Generative AI applications on enterprise data using Amazon Kendra, LangChain, and large language models](https://aws.amazon.com/blogs/machine-learning/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/)
 - {: .read-book-li } [Hands-on LLMs Course - Learn to Train and Deploy a Real-Time Financial Advisor](https://github.com/iusztinpaul/hands-on-llms)
 - {: .read-book-li } [AI Notes](https://github.com/swyxio/ai-notes)
 - {: .read-book-li } [Building a PDF Knowledge Bot With Open-Source LLMs - A Step-by-Step Guide](https://www.shakudo.io/blog/build-pdf-bot-open-source-llms)
