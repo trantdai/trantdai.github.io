@@ -4,7 +4,11 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
-*Last updated: **January 2024** - Updated section(s): **AI & Machine Learning & Data Science and DevSecOps***
+*Last updated: **March 2024** - Updated section(s): **AI Security***
+
+## 📙 AI Security
+
+- {: .read-book-li } [Must Learn AI Security](https://github.com/rod-trent/OpenAISecurity/tree/main/Must_Learn)
 
 ## 📙 AI & Machine Learning & Data Science
 
