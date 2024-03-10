@@ -27,6 +27,6 @@
   image: /assets/images/projects/akamai_logo.svg
   description: Automation framework using DevOps methodology and Akamai provider for Terraform to build self service auto-management solutions
 - name: AIDefender - LLM Guard Deployment and Application PoC
-  link: /blog/terraform-based-self-service-oriented-automation-framework-for-akamai-auto-management
+  link: /blog/ai-security-poc-using-llm-guard
   image: /assets/images/projects/ai_security2.png
   description: AI Security PoC for LLM Guard
