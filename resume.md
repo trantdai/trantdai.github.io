@@ -129,9 +129,9 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 **Programs and Initiatives**
 
 | <span style="color:#ffdd57">Program/Initiative</span>   | <span style="color:#ffdd57">Role</span>                  |
-| Edge security self-service automation                   | Technical/solution lead                                  |
-| Federated Security Architecture                         | Group Security Champion                                  |
 | ------------------------------------------------------- | -------------------------------------------------------- |
+| Edge security self-service automation                   | Technical/solution lead                                  |
+| Federated security architecture                         | Group security champion                                  |
 | Firewall policy change review and management automation | Technical/solution lead                                  |
 | Security as an API                                      | Technical/solution lead                                  |
 | Terraform based self-service Akamai automation          | De facto project manager & technical/solution lead       |
