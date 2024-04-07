@@ -74,7 +74,6 @@ tags:
 
 
 ## ✅ How to Answer a System Design Interview Problem
-<img src="diagrams/interview-template.png" width="400" height="250">
 
 ### [Read the Full Article](https://newsletter.ashishps.com/p/how-to-answer-a-system-design-interview-problem)
 

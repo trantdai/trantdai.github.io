@@ -326,6 +326,7 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING AND INDUSTRY CERTIFICATES
 
+- April 2024 \| [Applied Skills Earned Develop generative AI solutions with Azure OpenAI Service](https://lnkd.in/gYBNr8YZ)
 - March 2024 \| [Applied Skills Earned Develop generative AI solutions with Azure OpenAI Service](https://lnkd.in/gYBNr8YZ)
 - February 2024 \| [Udemy AWS Amazon Bedrock & Generative AI - Beginner to Advanced](https://cba.udemy.com/course/amazon-bedrock-aws-generative-ai-beginner-to-advanced/learn/lecture/41650890#overview)
 - September 2023 \| [AWS Certified Developer – Associate](https://www.credly.com/badges/4fbb8332-66a4-4977-bd5a-45b10d54b92a/linked_in_profile)
