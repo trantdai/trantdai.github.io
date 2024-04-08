@@ -4,7 +4,7 @@ layout: reading
 ---
 ***“Today a reader, tomorrow a leader.” – Margaret Fuller***
 
-*Last updated: **March 2024** - Updated section(s): **AI Security***
+*Last updated: **April 2024** - Updated section(s): **Git & GitHub***
 
 ## 📙 AI Security
 
