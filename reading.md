@@ -57,6 +57,9 @@ guac](https://github.com/guacsec/guac)
 
 ## 📙 Git & GitHub
 
+- {: .read-book-li } [GitHub Copilot Sandbox/Demo](https://gh.io/copilot-demo)
+- {: .read-book-li } [Pragmatic techniques to get the most out of GitHub Copilot | BRK255H - YouTube](https://www.youtube.com/watch?v=CwAzIpc4AnA)
+- {: .read-book-li } [Write more code by writing less code with GitHub Copilot](https://www.youtube.com/watch?v=RTPnfKF2Hq0)
 - {: .read-book-li } [Create a resume website in your browser with VS Code and GitHub Pages](https://learn.microsoft.com/en-us/events/vs-code-day-2022/create-a-resume-website-in-your-browser-with-vs-code-and-github-pages)
 
 ## 📙 Visual Studio Code
