@@ -14,7 +14,7 @@ tags:
 
 ![GenAI Powered Security Self-service Chatbot HLSA](/assets/images/blog/20240610/security_selfservice_chatbot_hlsa.png "GenAI Powered Security Self-service Chatbot HLSA")
 
-The PoC generative AI powered self-service scurity chatbot is built upon the following building blocks:
+The PoC generative AI powered security self-service chatbot is built upon the following building blocks:
 
 - AI powered application<br>
   - [Front end chatbot code](https://github.com/trantdai/genai/blob/main/selfservicebot.py)
@@ -76,12 +76,12 @@ AWS Bedrock Knowledge Base is the AWS Bedrock orchestration service that co-ordi
 4. The S3 bucket document upload creates an event that triggers the Lambda function that performs the Knowledge Base Sync:
    1. Knowledge Base service retrieves updated source data from the S3 bucket
    2. It splits data into chunks (aka performs data chunkcing)
-   3. It send data chunks to the text embeddings model to create vectors
+   3. It sends data chunks to the text embeddings model to create vectors
    4. It indexes and saves the created vectors in AWS OpenSearch Serverless vector database
 5. Test the updated knowledge base by running a query to generate responses. If the reponses are not accurate, repeate the whole workflow to fine tune the answers.
 
-## Self-service Security Chatbot Workflow
-1. Security consumers ask the chatbot security domain questions like `What does Cloudflare web application firewall do?` and `What does Cloudflare rate limit do?` to understand about the security technlogies in question<br>![WAF Question Answer](/assets/images/blog/20240610/waf_question_answer.png "WAF Question Answer")<br>![Rate Limit Question Answer](/assets/images/blog/20240610/rate_limit_question_answer.png "Rate Limit Question Answer")
+## Security Self-Service Chatbot Workflow
+1. Security consumers ask the chatbot security domain questions like `What does Cloudflare web application firewall do?` and `What does Cloudflare rate limit do?` to gain understanding of the security technlogies in question<br>![WAF Question Answer](/assets/images/blog/20240610/waf_question_answer.png "WAF Question Answer")<br>![Rate Limit Question Answer](/assets/images/blog/20240610/rate_limit_question_answer.png "Rate Limit Question Answer")
 2. Security consumers ask the chatbot about how to create and manage the security configuration using an IaC tool like `Terraform` to get the suggested sample code. Some examples of the questions are `Tell me how to create Cloudflare WAF managed ruleset in Terraform` and `Show me Terraform code to create a Cloudflare HTTP rate limit resource`<br>![WAF Ruleset Prompt Answer](/assets/images/blog/20240610/chatbot_prompt_waf_ruleset.png "WAF Ruleset Prompt Answer")<br>![HTTP Rate Limit Prompt Answer](/assets/images/blog/20240610/chatbot_prompt_rate_limit.png "[HTTP Rate Limit Prompt Answer")
 3. Security consumers compose their security self-service requests based on the suggested sample code and ask the chatbot to create a GitHub pull request on their behalf like this prompt ```createpr->resource "cloudflare_rate_limit" "example" { zone_id = "your_zone_id" name = "example-rate-limit" description = "Example rate limit" disabled = false match { request { methods = ["GET", "POST"] schemes = ["HTTP", "HTTPS"] path { values = ["/example/*"] } } } threshold = 10 period = 1 action { mode = "simulate" } }```
 4. The chatbot creates a PR<br>![Rate Limit PR Creation](/assets/images/blog/20240610/create_pr_rate_limit.png "Rate Limit PR Creation")<br>![Rate Limit PR Creation on GitHub Repo](/assets/images/blog/20240610/pull_request_created_by_chatbot.png "Rate Limit PR Creation on GitHub Repo")
