@@ -132,3 +132,4 @@ TBD
 3. [Implementing RAG App Using Knowledge Base from Amazon Bedrock and Streamlit](https://medium.com/@saikatm.courses/implementing-rag-app-using-knowledge-base-from-amazon-bedrock-and-streamlit-e52f8300f01d)
 4. [Amazon Bedrock & AWS Generative AI - Beginner to Advanced](https://cba.udemy.com/course/amazon-bedrock-aws-generative-ai-beginner-to-advanced/)
 5. [Build a basic LLM chat app](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)
+6. [AWS: Integrate Bedrock Knowledge Base (AWS SDK & LangChain)](https://awstip.com/aws-integrate-bedrock-knowledge-base-aws-sdk-langchain-7b79d4944f7f)
