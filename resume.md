@@ -76,7 +76,7 @@ Recognized for professionalism, positive mental attitude, commitment to excellen
 <br>
 ☑️ Architecting and Developing on AWS and Azure
 <br>
-☑️ Integrated security automation and CI/CD pipeline solution architecture, design, and implementation
+☑️ Integrated security enablement and CI/CD pipeline solution architecture, design, and implementation
 <br>
 ☑️ IaC/Terraform, Docker and DevSecOps tooling
 <br>
