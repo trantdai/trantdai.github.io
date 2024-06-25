@@ -74,7 +74,9 @@ Recognized for professionalism, positive mental attitude, commitment to excellen
 <br>
 ☑️ Analytical, research, development and troubleshooting skills
 <br>
-☑️ Integrated automation and CI/CD pipeline solution architecture, design, and implementation
+☑️ Architecting and Developing on AWS and Azure
+<br>
+☑️ Integrated security automation and CI/CD pipeline solution architecture, design, and implementation
 <br>
 ☑️ IaC/Terraform, Docker and DevSecOps tooling
 <br>
@@ -84,7 +86,7 @@ Recognized for professionalism, positive mental attitude, commitment to excellen
 <br>
 ☑️ Microsoft Azure security
 <br>
-☑️ Next-generation and traditional firewalls, secure web gateway
+☑️ Next-generation and traditional firewalls, secure web gateways, edge security platforms
 <br>
 ☑️ Switching and routing
 <br>
@@ -130,7 +132,7 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 
 | <span style="color:#ffdd57">Program/Initiative</span>   | <span style="color:#ffdd57">Role</span>                  |
 | ------------------------------------------------------- | -------------------------------------------------------- |
-| Edge security self-service automation                   | Technical/solution lead                                  |
+| Edge security self-service platform                   | Technical/solution lead                                  |
 | Federated security architecture                         | Group security champion                                  |
 | Firewall policy change review and management automation | Technical/solution lead                                  |
 | Security as an API                                      | Technical/solution lead                                  |
