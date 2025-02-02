@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **April 2024** - Updated section(s): **INDUSTRY EXPERIENCE AND FURTHER TRAINING***
+*Last updated: **February 2025** - Updated section(s): **INDUSTRY EXPERIENCE AND FURTHER TRAINING***
 
 ## TABLE OF CONTENTS
 
@@ -70,6 +70,7 @@ Instrumental in driving improvements in processes, operational efficiency/agilit
 Recognized for professionalism, positive mental attitude, commitment to excellence, and natural ability for critical thinking and complex problems solving. Excellent interpersonal and mentoring skills, self-motivated, and able to communicate and collaborate effectively with co-workers at all levels.
 
 ## CORE TECHNICAL COMPETENCIES
+
 ☑️ End-to-end cross-domain complex large-scale mission-critical project/product delivery related skills
 <br>
 ☑️ Analytical, research, development and troubleshooting skills
@@ -93,6 +94,7 @@ Recognized for professionalism, positive mental attitude, commitment to excellen
 ☑️ IPAM, DHCP, DNS and IPSEC & VPNs
 
 ## RECOGNISED ACHIEVEMENTS
+
 🥇 2022 \| Annual performance achievement of Above Expectations and top (75% of maximum) bonus award
 <br>
 🥇 2021 \| Recognition of Commitment for the delivery of the CI/CD pipeline that automates firewall policy breach reporting for Network Security control team
@@ -132,7 +134,8 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 
 | <span style="color:#ffdd57">Program/Initiative</span>   | <span style="color:#ffdd57">Role</span>                  |
 | ------------------------------------------------------- | -------------------------------------------------------- |
-| Edge security self-service platform                   | Technical/solution lead                                  |
+| Group security orchestration platform                   | Technical/solution co-lead                               |
+| Edge security self-service platform                     | Technical/solution lead                                  |
 | Federated security architecture                         | Group security champion                                  |
 | Firewall policy change review and management automation | Technical/solution lead                                  |
 | Security as an API                                      | Technical/solution lead                                  |
@@ -328,6 +331,7 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING AND INDUSTRY CERTIFICATES
 
+- Febuary 2025 \| [Scaling Kubernetes Apps & Solutions: Kubernetes Packaging by Skillsoft](https://skillsoft.digitalbadges.skillsoft.com/94a1103e-c295-40be-8021-48bfa1bc10af#acc.cTY7krzX)
 - April 2024 \| [Architecting on AWS](https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=lI75uWqvO0Gesm8YixISqw2)
 - March 2024 \| [Applied Skills Earned Develop generative AI solutions with Azure OpenAI Service](https://lnkd.in/gYBNr8YZ)
 - February 2024 \| [Udemy AWS Amazon Bedrock & Generative AI - Beginner to Advanced](https://cba.udemy.com/course/amazon-bedrock-aws-generative-ai-beginner-to-advanced/learn/lecture/41650890#overview)
