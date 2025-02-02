@@ -331,7 +331,7 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING AND INDUSTRY CERTIFICATES
 
-- Febuary 2025 \| [Scaling Kubernetes Apps & Solutions: Kubernetes Packaging by Skillsoft](https://skillsoft.digitalbadges.skillsoft.com/94a1103e-c295-40be-8021-48bfa1bc10af#acc.cTY7krzX)
+- Febuary 2025 \| [Scaling Kubernetes Apps & Solutions: Kubernetes Packaging by Skillsoft](https://skillsoft.digitalbadges.skillsoft.com/94a1103e-c295-40be-8021-48bfa1bc10af)
 - April 2024 \| [Architecting on AWS](https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=lI75uWqvO0Gesm8YixISqw2)
 - March 2024 \| [Applied Skills Earned Develop generative AI solutions with Azure OpenAI Service](https://lnkd.in/gYBNr8YZ)
 - February 2024 \| [Udemy AWS Amazon Bedrock & Generative AI - Beginner to Advanced](https://cba.udemy.com/course/amazon-bedrock-aws-generative-ai-beginner-to-advanced/learn/lecture/41650890#overview)
