@@ -1,11 +1,12 @@
 ---
 title: FastAPI Factory Using OpenAPI Generator
 layout: post
-post-image: "/assets/images/blog/20240610/generative-AI-customer-self-service.jpg"
+post-image: "/assets/images/blog/20250418/openapi_gen_helloworld_fastapi.png"
 description: Generating FastAPI server using OpenAPI Generator
 tags:
 - project
 - api
+- fastapi
 - openapi
 - generator
 - factory
@@ -14,7 +15,7 @@ tags:
 
 # Introduction
 
-This blog post discusses the use of the [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) tool developed by the [OpenAPI Generator](https://openapi-generator.tech/) project. It  allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an OpenAPI Spec (v2, v3).
+This blog post discusses the use of the [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) tool developed by the [OpenAPI Generator](https://openapi-generator.tech/) project to generate Python FastAPI server code from prepared OpenAPI specs. It  allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an OpenAPI Spec (v2, v3).
 
 **NOTE**: Currently it only supports up to Python `3.12`.
 
@@ -55,9 +56,9 @@ brew install openapi-generator
 
 ### Usage
 
-#### HelloWorld API Server Generation
+#### HelloWorld FastAPI Server Generation
 
-Follow the following instructions to generate the FastAPI HelloWorld API server code from the [HelloWorld OpenAPI specs](./helloworld/server/openapi.yaml) prepared in advance as the input.
+Follow the following instructions to generate the FastAPI HelloWorld API server code from the [HelloWorld OpenAPI specs](/assets/yaml/openapi.yaml) prepared in advance as the input.
 
 ```bash
 cd api/generator/helloworld/server
@@ -137,9 +138,5 @@ docker-compose up --build
 ```
 
 # References
-1. [Security self service GitHub code repository](https://github.com/trantdai/genai)
-2. [Use IAM roles to connect GitHub Actions to actions in AWS](https://aws.amazon.com/blogs/security/use-iam-roles-to-connect-github-actions-to-actions-in-aws/)
-3. [Implementing RAG App Using Knowledge Base from Amazon Bedrock and Streamlit](https://medium.com/@saikatm.courses/implementing-rag-app-using-knowledge-base-from-amazon-bedrock-and-streamlit-e52f8300f01d)
-4. [Amazon Bedrock & AWS Generative AI - Beginner to Advanced](https://cba.udemy.com/course/amazon-bedrock-aws-generative-ai-beginner-to-advanced/)
-5. [Build a basic LLM chat app](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)
-6. [AWS: Integrate Bedrock Knowledge Base (AWS SDK & LangChain)](https://awstip.com/aws-integrate-bedrock-knowledge-base-aws-sdk-langchain-7b79d4944f7f)
+1. [OpenAPI Generator Documentation](https://openapi-generator.tech/)
+2. [OpenAPI Generator GitHub](https://github.com/OpenAPITools/openapi-generator)
