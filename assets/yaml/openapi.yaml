@@ -1,0 +1,105 @@
+openapi: 3.0.0
+info:
+  description: A simple API for saying hello and managing person names.
+  title: Hello World API
+  version: 1.0.0
+servers:
+- description: Local server for the Hello World API
+  url: http://localhost:8080
+paths:
+  /hello:
+    get:
+      description: Returns a simple "Hello World" message.
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                example: Hello World
+                type: string
+          description: A successful response.
+      summary: Say Hello World
+  /person:
+    post:
+      description: Adds a new person name to the system.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/_person_post_request'
+        required: true
+      responses:
+        "201":
+          description: Person added successfully.
+        "400":
+          description: Invalid input.
+      summary: Add a new person
+  /person/{name}:
+    get:
+      description: Retrieves the name of a person by their identifier.
+      parameters:
+      - description: The name of the person to retrieve.
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          example: John
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/_person__name__get_200_response'
+          description: A successful response.
+        "404":
+          description: Person not found.
+      summary: Get a person's name
+  /hello/{name}:
+    get:
+      description: "Returns a personalized \"Hello {name}\" message."
+      parameters:
+      - description: The name of the person to greet.
+        explode: false
+        in: path
+        name: name
+        required: true
+        schema:
+          example: John
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                example: Hello John
+                type: string
+          description: A successful response.
+        "404":
+          description: Person not found.
+      summary: Say Hello to a person
+components:
+  schemas:
+    _person__name__get_200_response:
+      example:
+        name: John
+      properties:
+        name:
+          description: The name of the person.
+          example: John
+          title: name
+          type: string
+      title: _person__name__get_200_response
+      type: object
+    _person_post_request:
+      properties:
+        name:
+          description: The name of the person to add.
+          example: John
+          title: name
+          type: string
+      title: _person_post_request
+      type: object
