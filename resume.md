@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **February 2025** - Updated section(s): **INDUSTRY EXPERIENCE AND FURTHER TRAINING***
+*Last updated: **September 2025** - Updated section(s): **INDUSTRY EXPERIENCE AND FURTHER TRAINING***
 
 ## TABLE OF CONTENTS
 
@@ -134,6 +134,7 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 
 | <span style="color:#ffdd57">Program/Initiative</span>   | <span style="color:#ffdd57">Role</span>                  |
 | ------------------------------------------------------- | -------------------------------------------------------- |
+| DevSecOps automated security checks                     | Technical/solution co-lead                               |
 | Group security orchestration platform                   | Technical/solution co-lead                               |
 | Edge security self-service platform                     | Technical/solution lead                                  |
 | Federated security architecture                         | Group security champion                                  |
@@ -331,6 +332,7 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 
 ## FURTHER TRAINING AND INDUSTRY CERTIFICATES
 
+- September 2025 \| [Security Engineering on AWS](https://www.lumifywork.com/en-au/courses/security-engineering-on-aws/)
 - March 2025 \| [Certified Kubernetes Application Developer (CKAD) Study Guide, 2nd Edition By Benjamin Muschko](https://learning.oreilly.com/library/view/certified-kubernetes-application/9781098152857/)
 - Febuary 2025 \| [Scaling Kubernetes Apps & Solutions: Kubernetes Packaging by Skillsoft](https://skillsoft.digitalbadges.skillsoft.com/94a1103e-c295-40be-8021-48bfa1bc10af)
 - April 2024 \| [Architecting on AWS](https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=lI75uWqvO0Gesm8YixISqw2)
