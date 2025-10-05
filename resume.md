@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **September 2025** - Updated section(s): **INDUSTRY EXPERIENCE AND FURTHER TRAINING***
+*Last updated: **October 2025** - Updated section(s): **INDUSTRY EXPERIENCE AND FURTHER TRAINING***
 
 ## TABLE OF CONTENTS
 
@@ -333,6 +333,7 @@ Aprl 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:/
 ## FURTHER TRAINING AND INDUSTRY CERTIFICATES
 
 - September 2025 \| [Security Engineering on AWS](https://www.lumifywork.com/en-au/courses/security-engineering-on-aws/)
+- August 2025 \| [Temporal 101 with Python](https://learn.temporal.io/courses/temporal_101/python/) and [Temporal 102: Exploring Durable Execution with Python](https://learn.temporal.io/courses/temporal_102/python/)
 - March 2025 \| [Certified Kubernetes Application Developer (CKAD) Study Guide, 2nd Edition By Benjamin Muschko](https://learning.oreilly.com/library/view/certified-kubernetes-application/9781098152857/)
 - Febuary 2025 \| [Scaling Kubernetes Apps & Solutions: Kubernetes Packaging by Skillsoft](https://skillsoft.digitalbadges.skillsoft.com/94a1103e-c295-40be-8021-48bfa1bc10af)
 - April 2024 \| [Architecting on AWS](https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=lI75uWqvO0Gesm8YixISqw2)
