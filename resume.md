@@ -96,8 +96,6 @@ Proven track record architecting multi-vendor firewall automation frameworks, Te
 ☑️ Switching and routing
 <br>
 ☑️ IPAM, DHCP, DNS and IPSEC & VPNs
-<br>
-☑️ AI/GenAI Engineering and Security
 
 ## RECOGNISED ACHIEVEMENTS
 
