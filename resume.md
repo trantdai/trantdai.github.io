@@ -63,14 +63,18 @@ permalink: "/resume"
 
 ## EXECUTIVE SUMMARY
 
-Highly talented, motivated and research oriented Computing and Communications PhD graduate with extensive cross-domain engineering experience comprising of over 11 years work experience in multiple domains of Edge Security (WAAP/DDoS), Network Security, Cyber Security , DevOps, and automation solution development with a proven track record of success delivering complicated security architecture, design, development, and implementation.
+PhD-qualified Security Development Engineer with 17+ years delivering security automation and architecture solutions across financial services, travel, IT, food and beverage, and education services. Currently serving as Staff Security Engineer at Commonwealth Bank, leading technical strategy for edge security self-service platforms, DevSecOps automation, and security orchestration initiatives.
 <br><br>
-Instrumental in driving improvements in processes, operational efficiency/agility and system stability in complex large-scale mission-critical environments across diverse industries including Financial, IT, Travel, Food and Beverage, and Education services. Skilled in multi-vendor firewall migration and administration, Cyber/Cloud Security automation, security technology REST APIs, Infrastructure as Code (Terraform/Terratest), Python secure software development, Linux, Bash scripting, Ansible/Tower, Security as Code, Docker, CI/CD and DevSecOps tools/methodologies.
+Proven track record architecting multi-vendor firewall automation frameworks, Terraform-based infrastructure-as-code solutions, and CI/CD pipelines that drive operational efficiency in mission-critical environments. Recognized with Above Expectations performance rating and multiple industry awards for innovation in security automation.
 <br><br>
-Recognized for professionalism, positive mental attitude, commitment to excellence, and natural ability for critical thinking and complex problems solving. Excellent interpersonal and mentoring skills, self-motivated, and able to communicate and collaborate effectively with co-workers at all levels.
+**Technical Expertise:** Python/Go secure development • AI/GenAI engineering (LLM, RAG, Agentic AI) • Infrastructure as Code (Terraform/Terratest) • Multi-vendor firewall automation (Palo Alto, Cisco, Akamai) • AWS/Azure security architecture • Temporal workflow orchestration • REST API/Microservices development • DevSecOps practices • AI security controls • Ansible/AWX • Docker • CI/CD pipelines
+<br><br>
+**Certifications:** AWS Certified Developer Associate • Microsoft Azure Security Engineer Associate • AZ-400 DevOps • PCNSE • CCNP • CEH
 
 ## CORE TECHNICAL COMPETENCIES
 
+☑️ AI/GenAI application development (LLM, RAG, Agentic AI) and AI security
+<br>
 ☑️ End-to-end cross-domain complex large-scale mission-critical project/product delivery related skills
 <br>
 ☑️ Analytical, research, development and troubleshooting skills
@@ -81,7 +85,7 @@ Recognized for professionalism, positive mental attitude, commitment to excellen
 <br>
 ☑️ IaC/Terraform, Docker and DevSecOps tooling
 <br>
-☑️ Software development/scripting tools like Python, Go, Bash, Ansible, Git, Jinja2, JSON, YAML, REST APIs
+☑️ Software development/scripting tools like Python, Go, Bash, Ansible, Git, Jinja2, JSON, YAML, REST APIs, Temporal workflow orchestration
 <br>
 ☑️ Linux and Windows administration
 <br>
@@ -92,6 +96,8 @@ Recognized for professionalism, positive mental attitude, commitment to excellen
 ☑️ Switching and routing
 <br>
 ☑️ IPAM, DHCP, DNS and IPSEC & VPNs
+<br>
+☑️ AI/GenAI Engineering and Security
 
 ## RECOGNISED ACHIEVEMENTS
 
@@ -125,6 +131,8 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 - Proactively identify risks to achieving timely delivery, effectively communicating and adjusting plans to achieve goals.
 - Mentor and up-skill other engineering teams across different squads.
 - Define project stretch goals and success measures, holding the squad accountable.
+- Drive proof-of-concept development for AI-powered security solutions including GenAI chatbots using AWS Bedrock, RAG architecture, and LLM integration for security self-service automation.
+- Architect agentic AI system PoCs for vulnerability management using MCP (Model Context Protocol) servers integrating security tools (Snyk, Sysdig, Wiz) with automated remediation workflows, and AI security controls with LLM Guard API for prompt injection protection.
 - Communicate the security engineering vision in a way that inspires across the Group.
 - Independently complete design and threat modelling.
 - Drive the development of strategic programs of work, including proof of concept developments.
