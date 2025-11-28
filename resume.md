@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **October 2025** - Updated section(s): **INDUSTRY EXPERIENCE AND FURTHER TRAINING***
+*Last updated: **November 2025** - Updated section(s): **INDUSTRY EXPERIENCE AND CERTIFICATIONS***
 
 ## TABLE OF CONTENTS
 
@@ -76,29 +76,29 @@ Architect of enterprise-scale security automation frameworks including multi-ven
 
 ## CORE TECHNICAL COMPETENCIES
 
-☑️ AI/GenAI application development (LLM, RAG, Agentic AI) and AI security
+✅ AI/GenAI application development (LLM, RAG, Agentic AI) and AI security
 <br>
-☑️ End-to-end cross-domain complex large-scale mission-critical project/product delivery related skills
+✅ End-to-end cross-domain complex large-scale mission-critical project/product delivery related skills
 <br>
-☑️ Analytical, research, development and troubleshooting skills
+✅ Analytical, research, development and troubleshooting skills
 <br>
-☑️ Architecting and Developing on AWS and Azure
+✅ Architecting and Developing on AWS and Azure
 <br>
-☑️ Integrated security enablement and CI/CD pipeline solution architecture, design, and implementation
+✅ Integrated security enablement and CI/CD pipeline solution architecture, design, and implementation
 <br>
-☑️ IaC/Terraform, Docker and DevSecOps tooling
+✅ IaC/Terraform, Docker and DevSecOps tooling
 <br>
-☑️ Software development/scripting tools like Python, Go, Bash, Ansible, Git, Jinja2, JSON, YAML, REST APIs, Temporal workflow orchestration
+✅ Software development/scripting tools like Python, Go, Bash, Ansible, Git, Jinja2, JSON, YAML, REST APIs, Temporal workflow orchestration
 <br>
-☑️ Linux and Windows administration
+✅ Linux and Windows administration
 <br>
-☑️ Microsoft Azure security
+✅ Microsoft Azure security
 <br>
-☑️ Next-generation and traditional firewalls, secure web gateways, edge security platforms
+✅ Next-generation and traditional firewalls, secure web gateways, edge security platforms
 <br>
-☑️ Switching and routing
+✅ Switching and routing
 <br>
-☑️ IPAM, DHCP, DNS and IPSEC & VPNs
+✅ IPAM, DHCP, DNS and IPSEC & VPNs
 
 ## RECOGNISED ACHIEVEMENTS
 
@@ -126,34 +126,33 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 
 **Responsibilities**
 
-- Utilize strong understanding of core business and technical strategies to deliver best business outcomes through technical implementation.
-- Develop the technical strategy, overseeing medium to complex engineering initiatives.
-- Create designs and solutions that can be leveraged by the broader team to implement product or technology strategies.
-- Proactively identify risks to achieving timely delivery, effectively communicating and adjusting plans to achieve goals.
+- Drive business outcomes by aligning technical implementations with core business and technical strategies.
+- Develop technical strategy while overseeing medium to complex engineering initiatives.
+- Design solutions that enable broader teams to implement product and technology strategies.
+- Identify delivery risks proactively, communicate effectively, and adjust plans to achieve goals.
 - Mentor and up-skill other engineering teams across different squads.
 - Define project stretch goals and success measures, holding the squad accountable.
 - Architect and develop AI-powered security automation PoCs including:
   - GenAI chatbot using AWS Bedrock, RAG architecture, and Streamlit for self-service security configuration management
   - Agentic vulnerability management system using MCP servers, integrating security tools (Snyk, Sysdig, Wiz) with automated Jira/GitHub workflows
   - AI security controls using LLM Guard API for prompt injection and jailbreak protection
-- Architect agentic AI system PoCs for vulnerability management using MCP (Model Context Protocol) servers integrating security tools (Snyk, Sysdig, Wiz) with automated remediation workflows, and AI security controls with LLM Guard API for prompt injection protection.
-- Communicate the security engineering vision in a way that inspires across the Group.
-- Independently complete design and threat modelling.
+- Communicate security engineering vision to inspire teams across the Group.
+- Complete design and threat modelling independently.
 - Drive the development of strategic programs of work, including proof of concept developments.
 - Contribute to internal online discussions around security engineering, delivery and technology (for example blog posts and knowledge based articles).
 
 **Strategic Programs & Leadership Roles**
 
-| <span style="color:#ffdd57">Program/Initiative</span>   | <span style="color:#ffdd57">Role</span>                  | <span style="color:#ffdd57">Impact/Scope</span>                              |
-| ------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| AI/GenAI-powered security automation PoCs               | Architect & Developer                                    | RAG chatbot, agentic vulnerability management, AI security controls          |
-| DevSecOps automated security checks                     | Technical/Solution Co-lead                               | Enterprise-wide automated security control compliance gates in CI/CD enabling secure-by-default development                                     |
-| Group security orchestration platform                   | Technical/Solution Co-lead                               | Centralized Temporal platform orchestrating security tool integrations and workflows                                          |
-| Edge security self-service platform                     | Technical/Solution Lead                                  | Multi-tenant self-service WAAP/DDoS platform (Akamai, Cloudflare) serving enterprise-wide business units via Terraform                     |
-| Federated security architecture                         | Group Security Champion                                  | Cross-domain security solution assessments and risk mitigation                                       |
-| Corporate edge firewall policy governance automation                   | Technical/Solution Lead                                  | Automated Palo Alto request validation, change plan generation, and compliance documentation                                 |
-| Security as an API                                      | Technical/Solution Co-lead                                  | Group-wide REST API framework enabling programmatic security tool integration and automation                                          |
-| DevSecOps                                               | Group Cybersecurity AppSec Champion                      | Secure code review, AppSec standards, monthly champion meetups               |
+| <span style="color:#ffdd57">Program/Initiative</span> | <span style="color:#ffdd57">Role</span> | <span style="color:#ffdd57">Impact/Scope</span>                                                                        |
+| ----------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| AI/GenAI-powered security automation PoCs             | Architect & Developer                   | RAG chatbot, agentic vulnerability management, AI security controls                                                    |
+| DevSecOps automated security checks                   | Technical/Solution Co-lead              | Enterprise-wide automated security control compliance gates in CI/CD enabling secure-by-default development            |
+| Group security orchestration platform                 | Technical/Solution Co-lead              | Centralized Temporal platform orchestrating security tool integrations and workflows                                   |
+| Edge security self-service platform                   | Technical/Solution Lead                 | Multi-tenant self-service WAAP/DDoS platform (Akamai, Cloudflare) serving enterprise-wide business units via Terraform |
+| Federated security architecture                       | Group Security Champion                 | Cross-domain security solution assessments and risk mitigation                                                         |
+| Corporate edge firewall policy governance automation  | Technical/Solution Lead                 | Automated Palo Alto request validation, change plan generation, and compliance documentation                           |
+| Security as an API                                    | Technical/Solution Co-lead              | Group-wide REST API framework enabling programmatic security tool integration and automation                           |
+| DevSecOps                                             | Group Cybersecurity AppSec Champion     | Secure code review, AppSec standards, monthly champion meetups                                                         |
 
 #### Senior Engineer - Security Automation
 
@@ -171,13 +170,13 @@ May 2022 - September 2022 \| **[Commonwealth Bank of Australia](https://www.comm
 
 **Responsibilities**
 
-- Architect, design and implement DevSecOps framework and practices for the bank's brand new Cyber Security Automation team using GitHub Enterprise, TeamCity, Docker, Checkmarx, Jfrog Artifactory, Jfrog Xray, HashiCorp Vault, Bash scripting
-- Design, build, and maintain shared Python library and its DevOps pipeline producing PyPi package called PyCyber for Cyber Security Automation team's automation solution development
-- Undertake CBA AppSec champion role responsible for performing secure code review and approval, attending and giving talks to monthly AppSec champion meetups
-- Actively drive initiatives that identify opportunities to optimize, automate or rationalize activities across Cyber Security controls
+- Architect, design, and implement DevSecOps framework and practices for the bank's Cyber Security Automation team using GitHub Enterprise, TeamCity, Docker, Checkmarx, Jfrog Artifactory, Jfrog Xray, HashiCorp Vault, and Bash scripting
+- Design, build, and maintain shared Python library with DevOps pipeline producing PyPi package (PyCyber) for Cyber Security Automation team's solution development
+- Serve as CBA AppSec champion, performing secure code reviews and approvals while delivering talks at monthly AppSec champion meetups
+- Drive initiatives that optimize, automate, and rationalize activities across Cyber Security controls
 - Drive efficiencies and productivity gains through implementation of automation functions/solutions across Cyber Security group to uplift Cyber posture. These include privileged service account creation automation, Splunk onboarding automation, and Akamai automation.
 - Influence and drive practice of Automation standardization across Cyber Security group
-- Conducted technical interviews and candidate assessments, contributing to team growth and maintaining high engineering standards
+- Conduct technical interviews and candidate assessments, contributing to team growth and maintaining high engineering standards
 - Act as a technical lead, manage and lead a small team of Cyber Security automation engineers
 - Train security architects, cyber security engineers and control teams on automation solutions/functions and DevSecOps practices
 
@@ -198,7 +197,7 @@ February 2018 – May 2021 \| **[Amadeus IT Group](https://amadeus.com/en)** - 1
 - Architect, design, develop, maintain Python based multi-vendor firewall automation solutions for business use cases including automated end-to-end firewall path identification, SOC IP blocking, firewall change deployments, firewall permission checks, VPN cleanup, firewall definition cleanup
 - Integrate Python based multi-vendor firewall automation solutions with Ansible and Ansible AWX/Tower to produce user-friendly/guiding/self-service web GUI portals for firewall automation consumers and facilitate end-to-end automation initiatives via AWX API calls
 - Leverage firewall automation solutions to drive improvements in processes, operational efficiency/agility and system stability in mission-critical environment
-- Served as technical interviewer and hiring decision-maker for security engineering positions
+- Serve as technical interviewer and hiring decision-maker for security engineering positions
 - Mentor team members on Network Security and automation
 - Applied knowledge/skills/tools: PAN & Cisco firewalling & REST API, Python, Object oriented software design and development, Linux/Windows administration, Git, Bitbucket, Jira, Ansible/AWX, Jenkins, Docker, CI/CD workflow, Visual Studio Code, Insomnia, OpenAPI, Azure network/security, Terraform, Golang, Terratest
 
@@ -208,14 +207,14 @@ February 2015 – January 2018 \| **[Amadeus IT Pacific](https://amadeus.com/en)
 
 **Responsibilities**
 
-- Undertake a key role in the Cisco/Blue Coat to Palo Alto migration project
-- Conduct research on Palo Alto advanced features: Threat Prevention, User-ID, App-ID, Content-ID, SSL decryption, WildFire, URL Filtering, design and implement these on managed firewalls
-- Provide full lifecycle management of network security devices from design, engineering, implementation to maintenance
-- Administered and provided Tier 3 follow-the-sun support for complex global network security infrastructure spanning 152+ Palo Alto, Cisco firewall, and Blue Coat proxy clusters using Panorama, Cisco Security Manager, and SIEM platforms (QRadar, Splunk)
-- Authored technical documentation including network diagrams and knowledge base articles for global firewall and proxy infrastructure
-- Support the development & definition of AMADEUS security standards, policies & procedures and implement these through technical means
-- Provide security consulting and implementation of security concepts and audits for internal and external customers
-- Work closely with vendors’ TAC and professional services to resolve complex issues, fine-tune systems, and explore new features to meet emerging business challenges
+- Lead technical implementation of the Cisco/Blue Coat to Palo Alto migration project
+- Research, design, and implement Palo Alto advanced features including Threat Prevention, User-ID, App-ID, Content-ID, SSL decryption, WildFire, and URL Filtering on managed firewalls
+- Manage full lifecycle of network security devices from design and engineering through implementation and maintenance
+- Administer and provide Tier 3 follow-the-sun support for complex global network security infrastructure spanning 152+ Palo Alto, Cisco firewall, and Blue Coat proxy clusters using Panorama, Cisco Security Manager, and SIEM platforms (QRadar, Splunk)
+- Author technical documentation including network diagrams and knowledge base articles for global firewall and proxy infrastructure
+- Support development and definition of AMADEUS security standards, policies, and procedures, implementing them through technical means
+- Deliver security consulting and implement security concepts and audits for internal and external customers
+- Collaborate with vendors' TAC and professional services to resolve complex issues, fine-tune systems, and explore new features to meet emerging business challenges
 - Applied knowledge/skills/tools: PAN firewalls and Panorama, Cisco firewalls and CSM, Qradar, Splunk, Symantec Blue Coat proxies and Management Center
 
 #### IT Network Support Analyst
@@ -224,16 +223,16 @@ May 2013 - February 2015 \| **[LION Pty Ltd](http://lionco.com/)** - 5001-10,000
 
 **Responsibilities**
 
-- Conduct research and proof-of-concept projects on various network/security technologies such as Palo Alto and Cisco
+- Research and execute proof-of-concept projects on various network/security technologies such as Palo Alto and Cisco
 - Design, implement and administer Palo Alto firewalls via Panorama at enterprise Internet edges in Australia and New Zealand
 - Plan, configure, manage and troubleshoot enterprise Cisco Unified Wireless Network of more than 600 lightweight APs and controllers across AUNZ via Prime Infrastructure
 - Migrate Cisco autonomous wireless networks to lightweight wireless networks at multiple Lion dairy and drinks sites
 - Configure, administer and troubleshoot more than 1000 Cisco switches and routers at more than 120 Lion sites
-- Conduct LAN improvement projects at multiple Lion sites to improve network performance and manageability
+- Execute LAN improvement projects at multiple Lion sites to improve network performance and manageability
 - Configure and manage Cisco SSL & site to site VPNs, DMVPN, ASA firewalls, and Riverbed Stealheads
-- Work with Telco for WAN link provision, monitor enterprise WAN links and configure & deploy DMVPN 3G/4G routers to ensure business continuity
-- Provide technical consulting, level 3 escalation and on-call support via Cherwell ticketing system, phone calls and emails
-- Created comprehensive documentation including network topology diagrams and system configurations for 120+ Lion sites
+- Collaborate with Telco for WAN link provision, monitor enterprise WAN links, and configure & deploy DMVPN 3G/4G routers to ensure business continuity
+- Deliver technical consulting, level 3 escalation, and on-call support via Cherwell ticketing system, phone calls, and emails
+- Create comprehensive documentation including network topology diagrams and system configurations for 120+ Lion sites
 
 **Achievements**
 
@@ -247,13 +246,13 @@ February 2012 – May 2013 \| **[NETWORX AUSTRALIA](http://networxenterprise.com
 **Responsibilities**
 
 - Design and implement Silver Peak WAN optimization, Palo Alto firewall, SonicWALL firewall & VPN, VMware, Cisco switches & routers, and Cisco & Enterasys wireless solutions
-- Configure and administer Palo Alto & SonicWALL firewalls, SonicWALL, Ironport & Websense email security appliances, Aventail E-Class SRA appliances,  DELL switches, Blue Coat ProxySG & PacketShaper, F5 LTM, BlueCat DHCP & DNS, Enterasys wireless and network access control appliances, VMware virtual infrastructure, and SolarWinds NPM & NTA
-- Configure and administer Windows Server 2008 & SQL Server environments including MS Exchange and Active Directory, Group Policies, PKI, Failover Clustering, Network Policy Server
+- Configure and administer Palo Alto & SonicWALL firewalls, SonicWALL, Ironport & Websense email security appliances, Aventail E-Class SRA appliances, DELL switches, Blue Coat ProxySG & PacketShaper, F5 LTM, BlueCat DHCP & DNS, Enterasys wireless and network access control appliances, VMware virtual infrastructure, and SolarWinds NPM & NTA
+- Configure and administer Windows Server 2008 & SQL Server environments including MS Exchange and Active Directory, Group Policies, PKI, Failover Clustering, and Network Policy Server
 - Implement StorageCraft and SonicWALL data backup and disaster recovery solutions
-- Performed data center operations and maintained technical documentation for network infrastructure and systems
-- Provide technical consulting and pre- & post-sales support via ticketing system, remote desktop sessions, telephone and emails
-- Conduct research on new technologies & products and their applications
-- Work with technology vendors and partners on product enablement
+- Perform data center operations and maintain technical documentation for network infrastructure and systems
+- Deliver technical consulting and pre- & post-sales support via ticketing system, remote desktop sessions, telephone, and emails
+- Research new technologies & products and their applications
+- Collaborate with technology vendors and partners on product enablement
 
 #### Network & Systems Administrator, Contractor
 
@@ -279,7 +278,7 @@ October 2011 \| **[HotelsCombined™, Sydney](http://www.hotelscombined.com/)**
 
 **Responsibilities**
 
-- Design and build a new network of Cisco switches and router for HotelsCombined HQ office problems
+- Design and build new network of Cisco switches and routers for HotelsCombined HQ office
 
 **Achievements**
 
@@ -294,7 +293,7 @@ April 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:
 
 - Connect and enable data replication between two independently developed database applications: EMT (Enquiry Mate Trainers) and iMIS
 - Operate, administer, and customize EMT functionalities
-- Leverage T-SQL to extract data from EMT to Excel spreadsheets
+- Extract data from EMT to Excel spreadsheets using T-SQL
 - Develop Visual Basic Application for spreadsheets to generate administrative reports to Training Managers
 - Conduct training for staff in EMT and developed VB applications
 - Perform casual IT/Network troubleshooting
@@ -314,7 +313,7 @@ April 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:
 
 - Conducted research on security in wireless sensor networks and mobile ad-hoc networks
 - Developed and evaluated proposed algorithms through simulations and implementation using Matlab and nesC programming languages
-- Assisted in organization of weekly technical seminars
+- Organize weekly technical seminars
 - Presented at international academic conferences
 
 **Achievements**
@@ -400,7 +399,6 @@ April 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:
 ### CONTINUOUS LEARNING
 
 - March 2025 \| [Certified Kubernetes Application Developer (CKAD) Study Guide, 2nd Edition By Benjamin Muschko](https://learning.oreilly.com/library/view/certified-kubernetes-application/9781098152857/)
-- February 2025 \| [Scaling Kubernetes Apps & Solutions: Kubernetes Packaging by Skillsoft](https://skillsoft.digitalbadges.skillsoft.com/94a1103e-c295-40be-8021-48bfa1bc10af)
 - February 2024 \| [Udemy AWS Amazon Bedrock & Generative AI - Beginner to Advanced](https://cba.udemy.com/course/amazon-bedrock-aws-generative-ai-beginner-to-advanced/learn/lecture/41650890#overview)
 - October 2022 \| Udemy AWS Certified Security Specialty 2022 (**WIP**)
 - October 2022 \| Udemy Ultimate AWS Certified Developer Associate 2022 - NEW!
