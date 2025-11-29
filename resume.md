@@ -39,7 +39,7 @@ permalink: "/resume"
 
 - [TABLE OF CONTENTS](#table-of-contents)
 - [EXECUTIVE SUMMARY](#executive-summary)
-- [CORE TECHNICAL COMPETENCIES](#core-technical-competencies)
+- [CORE COMPETENCIES](#core-competencies)
 - [RECOGNISED ACHIEVEMENTS](#recognised-achievements)
 - [INDUSTRY EXPERIENCE](#industry-experience)
     - [Staff Security Engineer - Security Automation](#staff-security-engineer---security-automation)
@@ -74,7 +74,7 @@ Architect of enterprise-scale security automation frameworks including multi-ven
 <br><br>
 **Certifications:** AWS Certified Developer Associate • Microsoft Azure Security Engineer Associate • AZ-400 DevOps • PCNSE • CCNP • CEH
 
-## CORE TECHNICAL COMPETENCIES
+## CORE COMPETENCIES
 
 ✅ AI/GenAI application development (LLM, RAG, Agentic AI) and AI security
 <br>
