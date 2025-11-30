@@ -76,29 +76,29 @@ Architect of enterprise-scale security automation frameworks including multi-ven
 
 ## CORE COMPETENCIES
 
-✅ AI/GenAI application development (LLM, RAG, Agentic AI) and AI security
+✅ **AI/GenAI Security Engineering & Innovation** - LLM application development, RAG architecture, agentic AI systems, AI security controls (LLM Guard), prompt engineering, and AWS Bedrock/Azure OpenAI implementation backed by hands-on PoC delivery and specialized training
 <br>
-✅ End-to-end cross-domain complex large-scale mission-critical project/product delivery related skills
+✅ **Cloud Security Architecture & Engineering** - AWS and Azure security design, implementation, and automation validated by AWS Certified Developer Associate, Azure Security Engineer Associate certifications, and enterprise-scale deployments across financial services
 <br>
-✅ Analytical, research, development and troubleshooting skills
+✅ **Security Automation & Orchestration at Scale** - Enterprise security automation frameworks, Temporal workflow orchestration, multi-vendor firewall automation (Palo Alto, Cisco, Akamai), and security tool integration delivering measurable operational efficiency in mission-critical environments
 <br>
-✅ Architecting and Developing on AWS and Azure
+✅ **DevSecOps & CI/CD Pipeline Engineering** - Secure software development lifecycle, automated security controls, GitHub Enterprise, GitHub Actions, TeamCity, Docker, HashiCorp Vault, and AppSec champion practices with AZ-400 DevOps certification
 <br>
-✅ Integrated security enablement and CI/CD pipeline solution architecture, design, and implementation
+✅ **Infrastructure as Code & Cloud Automation** - Terraform/Terratest expertise, CloudFormation, multi-cloud IaC frameworks, self-service platform development, and automated infrastructure provisioning with Akamai DevOps Professional certification
 <br>
-✅ IaC/Terraform, Docker and DevSecOps tooling
+✅ **Enterprise Security Leadership & Strategy** - Technical strategy development, cross-domain security architecture, federated security solutions, stakeholder management, and mentoring engineering teams across large-scale organizations
 <br>
-✅ Software development/scripting tools like Python, Go, Bash, Ansible, Git, Jinja2, JSON, YAML, REST APIs, Temporal workflow orchestration
+✅ **Advanced Network Security & Firewall Technologies** - Next-generation firewalls (Palo Alto PCNSE certified), traditional firewalls, secure web gateways, edge security platforms (Akamai, Cloudflare), and 10+ years hands-on multi-vendor firewall management
 <br>
-✅ Linux and Windows administration
+✅ **Secure Software Development & Ethical Hacking** - Python and Go programming, REST API development, microservices architecture, offensive security mindset (CEH certified), vulnerability assessment, and production-grade security tool development
 <br>
-✅ Microsoft Azure security
+✅ **Container Orchestration & Kubernetes** - Kubernetes application development, container security, Helm packaging, and cloud-native security patterns supported by ongoing CKAD certification preparation
 <br>
-✅ Next-generation and traditional firewalls, secure web gateways, edge security platforms
+✅ **Security Research & Innovation** - PhD-level analytical and research capabilities, algorithm development, security protocol design, academic publication record, and translation of research into practical enterprise solutions
 <br>
-✅ Switching and routing
+✅ **Cross-Platform Systems Administration** - Linux and Windows server administration, cloud infrastructure management, networking protocols (CCNP certified), IPAM/DHCP/DNS, and VPN technologies
 <br>
-✅ IPAM, DHCP, DNS and IPSEC & VPNs
+✅ **Continuous Learning & Technology Adoption** - Demonstrated commitment through 25+ certifications, 50+ professional training courses, and rapid acquisition of emerging technologies (GenAI, Temporal, Kubernetes) aligned with industry evolution
 
 ## RECOGNISED ACHIEVEMENTS
 
