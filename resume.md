@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **December 2025** - Updated section(s): **CORE COMPETENCIES***
+*Last updated: **Jan 2026** - Updated section(s): **EXECUTIVE SUMMARY***
 
 ## TABLE OF CONTENTS
 
@@ -68,9 +68,11 @@ permalink: "/resume"
 
 PhD-qualified Security Development Engineer with 17+ years delivering security automation and architecture solutions across financial services (Commonwealth Bank), global travel technology (Amadeus), and enterprise sectors. Currently serving as Staff Security Engineer at Commonwealth Bank, leading technical strategy for edge security self-service platforms, DevSecOps automation, and security orchestration initiatives.
 <br><br>
+**Business & Leadership Impact:** Translates complex business requirements into scalable technical solutions that align with organizational strategy. Drives cross-functional collaboration and stakeholder engagement across technical and non-technical audiences. Leads strategic programs delivering enterprise-wide impact, mentors engineering teams, and communicates technical vision to inspire broader organizational adoption. Proven track record of identifying delivery risks proactively and adjusting plans to achieve business outcomes.
+<br><br>
 Architect of enterprise-scale security automation frameworks including multi-vendor firewall orchestration, Terraform-based IaC platforms, and CI/CD pipelines delivering measurable operational efficiency in mission-critical financial environments. Recognized with Above Expectations performance rating and multiple industry awards for innovation in security automation.
 <br><br>
-**Technical Expertise:** Python/Go secure development • AI/GenAI engineering (LLM, RAG, Agentic AI) • Infrastructure as Code (Terraform/Terratest) • Multi-vendor firewall automation (Palo Alto, Cisco, Akamai) • AWS/Azure security architecture • Temporal workflow orchestration • REST API/Microservices development • DevSecOps practices • AI security controls • Ansible/AWX • Docker • CI/CD pipelines
+**Technical Expertise:** Python/Go secure development • AI/GenAI engineering (LLM, RAG, Agentic AI) • Infrastructure as Code (Terraform/Terratest/CloudFormation) • Multi-vendor firewall automation (Palo Alto, Cisco, Akamai) • AWS/Azure security architecture • Temporal workflow orchestration • REST API/Microservices development • DevSecOps practices • AI security controls • Ansible/AWX • Docker • CI/CD pipelines
 <br><br>
 **Certifications:** AWS Certified Developer Associate • Microsoft Azure Security Engineer Associate • AZ-400 DevOps • PCNSE • CCNP • CEH
 
