@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Title -->
+  <text x="400" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Todo MCP Server Architecture</text>
+
+  <!-- AI Assistant Layer -->
+  <rect x="50" y="60" width="700" height="100" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="400" y="85" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">AI Assistant (Claude Desktop)</text>
+  <text x="400" y="110" font-size="12" text-anchor="middle" fill="#555">Natural Language Interface</text>
+  <text x="400" y="130" font-size="11" text-anchor="middle" fill="#666">• Create todos • List todos • Update status • Search tasks</text>
+
+  <!-- Arrow down -->
+  <path d="M 400 160 L 400 190" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="420" y="180" font-size="11" fill="#555">MCP Protocol</text>
+  <text x="420" y="192" font-size="10" fill="#666">(JSON-RPC 2.0)</text>
+
+  <!-- MCP Server Layer -->
+  <rect x="50" y="200" width="700" height="180" fill="#FFF3E0" stroke="#F57C00" stroke-width="2" rx="5"/>
+  <text x="400" y="225" font-size="16" font-weight="bold" text-anchor="middle" fill="#E65100">Todo MCP Server</text>
+
+  <!-- Tools Section -->
+  <rect x="70" y="240" width="200" height="120" fill="#FFFFFF" stroke="#FF9800" stroke-width="1.5" rx="3"/>
+  <text x="170" y="260" font-size="13" font-weight="bold" text-anchor="middle" fill="#E65100">Tools</text>
+  <text x="80" y="280" font-size="10" fill="#333">• create_todo</text>
+  <text x="80" y="295" font-size="10" fill="#333">• list_todos</text>
+  <text x="80" y="310" font-size="10" fill="#333">• get_todo</text>
+  <text x="80" y="325" font-size="10" fill="#333">• update_todo</text>
+  <text x="80" y="340" font-size="10" fill="#333">• delete_todo</text>
+  <text x="80" y="355" font-size="10" fill="#333">• search_todos</text>
+
+  <!-- Resources Section -->
+  <rect x="290" y="240" width="200" height="120" fill="#FFFFFF" stroke="#FF9800" stroke-width="1.5" rx="3"/>
+  <text x="390" y="260" font-size="13" font-weight="bold" text-anchor="middle" fill="#E65100">Resources</text>
+  <text x="300" y="280" font-size="10" fill="#333">• todo://all</text>
+  <text x="300" y="300" font-size="9" fill="#666">Returns all todos</text>
+  <text x="300" y="315" font-size="9" fill="#666">in structured format</text>
+
+  <!-- Server Logic Section -->
+  <rect x="510" y="240" width="220" height="120" fill="#FFFFFF" stroke="#FF9800" stroke-width="1.5" rx="3"/>
+  <text x="620" y="260" font-size="13" font-weight="bold" text-anchor="middle" fill="#E65100">Server Logic</text>
+  <text x="520" y="280" font-size="10" fill="#333">• Request validation</text>
+  <text x="520" y="295" font-size="10" fill="#333">• Error handling</text>
+  <text x="520" y="310" font-size="10" fill="#333">• Database operations</text>
+  <text x="520" y="325" font-size="10" fill="#333">• Response formatting</text>
+  <text x="520" y="340" font-size="10" fill="#333">• Transaction management</text>
+
+  <!-- Arrow down -->
+  <path d="M 400 380 L 400 410" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="420" y="400" font-size="11" fill="#555">SQLAlchemy ORM</text>
+
+  <!-- Database Layer -->
+  <rect x="50" y="420" width="700" height="140" fill="#E8F5E9" stroke="#388E3C" stroke-width="2" rx="5"/>
+  <text x="400" y="445" font-size="16" font-weight="bold" text-anchor="middle" fill="#2E7D32">SQLite Database</text>
+
+  <!-- Database Schema -->
+  <rect x="150" y="460" width="500" height="80" fill="#FFFFFF" stroke="#4CAF50" stroke-width="1.5" rx="3"/>
+  <text x="400" y="480" font-size="12" font-weight="bold" text-anchor="middle" fill="#2E7D32">Todo Table Schema</text>
+  <text x="160" y="500" font-size="10" fill="#333">id (Integer, PK) • title (String) • description (String) • status (String)</text>
+  <text x="160" y="515" font-size="10" fill="#333">priority (String) • created_at (DateTime) • updated_at (DateTime)</text>
+  <text x="160" y="530" font-size="9" fill="#666">Status: pending | in-progress | completed</text>
+
+  <!-- Features Box -->
+  <rect x="50" y="570" width="700" height="20" fill="#F5F5F5" stroke="#999" stroke-width="1" rx="3"/>
+  <text x="400" y="585" font-size="10" text-anchor="middle" fill="#555">✓ Persistent Storage  ✓ CRUD Operations  ✓ Search & Filter  ✓ Status Management  ✓ Priority Levels</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+</svg>
