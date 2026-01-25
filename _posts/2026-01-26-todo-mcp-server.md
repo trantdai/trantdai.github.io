@@ -1,18 +1,36 @@
 ---
-title: Building a Todo MCP Server - Extending AI Assistants with Custom Tools
+title: Building a Todo MCP Server - A Learning Journey into MCP Development
 layout: post
 post-image: "/assets/images/blog/20260126/mcp-todo-server.svg"
-description: A Model Context Protocol (MCP) server implementation for todo list management with SQLite persistence
+description: A hands-on learning project implementing a Model Context Protocol server with FastMCP, streamable-http transport, and dynamic tool discovery
 tags:
 - project
 - mcp-server
 - ai-powered-application
+- learning
 - blog
 ---
 
 # Introduction
 
-This project demonstrates the implementation of a Model Context Protocol (MCP) server that provides todo list management capabilities to AI assistants like Claude Desktop. The Model Context Protocol is an open standard that enables seamless integration between AI applications and external data sources, allowing AI assistants to access and manipulate data through well-defined tools and resources. This Todo MCP server showcases how to build a practical MCP server with persistent storage using SQLite, comprehensive CRUD operations, and proper error handling. By implementing this server, AI assistants gain the ability to create, read, update, and delete todo items, making them more useful for task management workflows.
+This is a **learning-focused project** designed to gain hands-on experience developing a Model Context Protocol (MCP) server following modern best practices. The project implements a simple Todo API with two core operations (GET and POST), wrapped in a FastMCP server using streamable-http transport—the modern MCP standard that replaced Server-Sent Events (SSE).
+
+The Model Context Protocol is an open standard developed by Anthropic that enables seamless integration between AI applications and external data sources. By building this MCP server, you'll learn how AI assistants like Claude Desktop, Roo Code, and GitHub Copilot can access and manipulate real-world data through well-defined tools and resources.
+
+## Learning Objectives
+
+This project teaches you how to:
+
+1. **Understand FastMCP Framework Architecture** - Learn how FastMCP simplifies MCP server development with automatic tool registration and context management
+2. **Implement Streamable-HTTP Transport** - Use the modern MCP transport standard that provides better reliability through a single endpoint
+3. **Follow Modern Development Patterns** - Apply best practices for project structure, logging, error handling, and documentation
+4. **Practice Dynamic Tool Discovery** - Implement automatic tool registration using Python module introspection
+5. **Learn MCP Server Deployment** - Configure and deploy MCP servers for use with various AI clients
+6. **Build Production-Ready APIs** - Create RESTful APIs with FastAPI, including validation, error handling, and documentation
+
+## Why This Matters
+
+MCP servers act as bridges between AI assistants and external systems, extending AI capabilities beyond their base knowledge. This project provides a practical foundation for building MCP servers that connect AI to databases, APIs, file systems, and other data sources—enabling more powerful and useful AI-powered workflows.
 
 # What is Model Context Protocol (MCP)?
 
@@ -29,152 +47,403 @@ MCP servers act as bridges between AI assistants and external systems, extending
 
 ![Todo MCP Server Architecture](/assets/images/blog/20260126/todo_mcp_architecture.svg "Todo MCP Server Architecture")
 
-The Todo MCP server is built upon the following components:
+The Todo MCP server implements a layered architecture with three main components:
 
-- **MCP Server Implementation**
-  - [Server code](https://github.com/trantdai/genai/blob/main/mcp/todo-mcp-server/src/todo_mcp_server/server.py)
-  - [Database models](https://github.com/trantdai/genai/blob/main/mcp/todo-mcp-server/src/todo_mcp_server/models.py)
-  - [Database operations](https://github.com/trantdai/genai/blob/main/mcp/todo-mcp-server/src/todo_mcp_server/database.py)
+## System Architecture
 
-- **Core Features**
-  - SQLite database for persistent storage
-  - CRUD operations for todo items
-  - Status management (pending, in-progress, completed)
-  - Priority levels (low, medium, high)
-  - Search and filtering capabilities
-  - Comprehensive error handling
+```
+┌─────────────────┐
+│   AI Client     │  ← Roo Code / Claude Desktop
+│   (VS Code)     │
+└────────┬────────┘
+         │ HTTP (streamable-http)
+         ▼
+┌─────────────────┐
+│  MCP Server     │  ← Port 8080
+│  (FastMCP)      │     Exposes MCP tools
+└────────┬────────┘
+         │ HTTP REST API
+         ▼
+┌─────────────────┐
+│  Backend API    │  ← Port 8000
+│  (FastAPI)      │     Business logic & storage
+└─────────────────┘
+```
 
-- **MCP Protocol Components**
-  - Tools: Functions that AI assistants can invoke
-  - Resources: Data endpoints that provide todo information
-  - Prompts: Pre-defined interaction patterns
+## Component Breakdown
+
+### 1. Backend API (Port 8000)
+- **Technology**: FastAPI REST service
+- **Storage**: In-memory todo storage (can be extended to SQLite/PostgreSQL)
+- **Endpoints**:
+  - `GET /api/todos` - List todos with filtering
+  - `POST /api/todos` - Create new todo
+  - `GET /health` - Health check
+- **Code**: [API implementation](https://github.com/trantdai/genai/blob/main/mcp/todo-mcp-server/src/todo_mcp_server/api/main.py)
+
+### 2. MCP Server (Port 8080)
+- **Technology**: FastMCP with streamable-http transport
+- **Tools Exposed**:
+  - `get_todos` - Retrieve todos with optional filtering
+  - `create_todo` - Create new todo items
+- **Communication**: HTTP REST API calls to Backend API
+- **Code**: [MCP server implementation](https://github.com/trantdai/genai/blob/main/mcp/todo-mcp-server/src/todo_mcp_server/server.py)
+
+### 3. AI Client Integration
+- **Roo Code** (VS Code extension) or **Claude Desktop**
+- Connects to MCP Server via streamable-http protocol
+- Uses natural language to invoke MCP tools
+- Displays results to users
+
+## Core Features
+
+- **CRUD Operations**: Create, read, update, delete todo items
+- **Status Management**: pending, in-progress, completed
+- **Priority Levels**: low, medium, high
+- **Search & Filtering**: Find todos by keyword, status, or priority
+- **Natural Language Interface**: Interact using conversational commands
+- **Docker Support**: Quick deployment with Docker Compose
+- **Comprehensive Error Handling**: Graceful error management
+- **Type Safety**: Full type hints throughout codebase
 
 # Server Implementation
 
-## Database Schema
+## Backend API (FastAPI)
 
-The Todo MCP server uses SQLite with the following schema:
+The Backend API provides RESTful endpoints for todo management:
 
-```python
-class Todo(Base):
-    __tablename__ = "todos"
-
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    title = Column(String, nullable=False)
-    description = Column(String)
-    status = Column(String, default="pending")  # pending, in-progress, completed
-    priority = Column(String, default="medium")  # low, medium, high
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-```
-
-## Available Tools
-
-The server exposes the following tools to AI assistants:
-
-### 1. create_todo
-Creates a new todo item with title, description, status, and priority.
+### Data Model
 
 ```python
-{
-    "name": "create_todo",
-    "description": "Create a new todo item",
-    "inputSchema": {
-        "type": "object",
-        "properties": {
-            "title": {"type": "string"},
-            "description": {"type": "string"},
-            "status": {"type": "string", "enum": ["pending", "in-progress", "completed"]},
-            "priority": {"type": "string", "enum": ["low", "medium", "high"]}
-        },
-        "required": ["title"]
-    }
-}
+class TodoCreate(BaseModel):
+    title: str
+    description: Optional[str] = None
+    status: Literal["pending", "in-progress", "completed"] = "pending"
+
+class Todo(TodoCreate):
+    id: str
+    created_at: datetime
+    updated_at: datetime
 ```
 
-### 2. list_todos
-Retrieves all todo items with optional filtering by status and priority.
+### API Endpoints
+
+**GET /api/todos** - List todos with filtering
+```python
+@app.get("/api/todos")
+async def list_todos(
+    status: Optional[str] = None,
+    search: Optional[str] = None,
+    limit: int = 10,
+    offset: int = 0
+):
+    # Returns filtered todos with pagination
+```
+
+**POST /api/todos** - Create new todo
+```python
+@app.post("/api/todos")
+async def create_todo(todo: TodoCreate):
+    # Creates and returns new todo
+```
+
+**GET /health** - Health check endpoint
+```python
+@app.get("/health")
+async def health():
+    return {"status": "healthy"}
+```
+
+## MCP Server (FastMCP)
+
+The MCP Server exposes tools that AI assistants can invoke:
+
+### Tool 1: get_todos
+
+Retrieves todos with optional filtering by status and search keyword.
 
 ```python
-{
-    "name": "list_todos",
-    "description": "List all todo items with optional filtering",
-    "inputSchema": {
-        "type": "object",
-        "properties": {
-            "status": {"type": "string", "enum": ["pending", "in-progress", "completed"]},
-            "priority": {"type": "string", "enum": ["low", "medium", "high"]}
-        }
-    }
-}
+@mcp.tool()
+async def get_todos(
+    status: Optional[str] = None,
+    search: Optional[str] = None
+) -> str:
+    """
+    Get all todos with optional filtering.
+
+    Args:
+        status: Filter by status (pending, in-progress, completed)
+        search: Search keyword in title or description
+
+    Returns:
+        JSON string with todos list
+    """
+    # Calls Backend API GET /api/todos
+    # Returns formatted results
 ```
 
-### 3. get_todo
-Retrieves a specific todo item by ID.
+### Tool 2: create_todo
 
-### 4. update_todo
-Updates an existing todo item's properties.
+Creates a new todo item.
 
-### 5. delete_todo
-Deletes a todo item by ID.
+```python
+@mcp.tool()
+async def create_todo(
+    title: str,
+    description: Optional[str] = None,
+    status: str = "pending"
+) -> str:
+    """
+    Create a new todo item.
 
-### 6. search_todos
-Searches todo items by keyword in title or description.
+    Args:
+        title: Todo title (required)
+        description: Optional description
+        status: Status (pending, in-progress, completed)
 
-## Resources
-
-The server provides a resource endpoint for accessing todo data:
-
+    Returns:
+        JSON string with created todo
+    """
+    # Calls Backend API POST /api/todos
+    # Returns created todo details
 ```
-todo://all
+
+## Communication Flow
+
+1. **AI Client** sends natural language request
+2. **MCP Server** interprets request and invokes appropriate tool
+3. **Tool** makes HTTP request to **Backend API**
+4. **Backend API** processes request and returns data
+5. **MCP Server** formats response for AI Client
+6. **AI Client** displays results to user
+
+## Configuration
+
+Environment variables can be set in `.env` file:
+
+```bash
+# Todo API Configuration
+TODO_API_URL=http://localhost:8000
+
+# Logging
+LOG_LEVEL=INFO  # Options: DEBUG, INFO, WARNING, ERROR
+
+# MCP Server
+MCP_PORT=8080
 ```
 
-This resource returns all todos in a structured format that AI assistants can read and understand.
+CLI options for MCP server:
+
+```bash
+python -m src.todo_mcp_server.cli \
+  --api-url http://localhost:8000 \
+  --log-level DEBUG \
+  --transport streamable-http \
+  --port 8080
+```
 
 # Installation and Setup
 
 ## Prerequisites
 
-- Python 3.10 or higher
-- pip package manager
-- Claude Desktop (for testing with AI assistant)
+- **Python 3.8+** - Check with `python3 --version`
+- **pip** - Python package installer
+- **Docker** (optional) - For containerized deployment
+- **VS Code with Roo Code extension** or **Claude Desktop** - For AI assistant integration
 
-## Installation Steps
+## Setup Methods
 
-1. Clone the repository:
+### Method 1: Docker (Fastest - Recommended)
+
+If you have Docker installed, start both services with a single command:
+
+```bash
+cd todo-mcp-server
+docker compose up -d
+```
+
+This starts:
+- Backend API on `http://localhost:8000`
+- MCP Server on `http://localhost:8080`
+
+Skip to [Configuring AI Client](#configuring-ai-client) section.
+
+### Method 2: Python Virtual Environment
+
+#### Step 1: Clone and Navigate
+
 ```bash
 git clone https://github.com/trantdai/genai.git
 cd genai/mcp/todo-mcp-server
 ```
 
-2. Install the package:
+#### Step 2: Set Up Virtual Environment
+
 ```bash
-pip install -e .
+# Create virtual environment
+python3 -m venv venv
+
+# Activate it
+# On macOS/Linux:
+source venv/bin/activate
+
+# On Windows:
+# venv\Scripts\activate
+
+# Verify activation (you should see (venv) in your prompt)
+which python  # Should point to venv/bin/python
 ```
 
-3. Configure Claude Desktop to use the MCP server by editing the configuration file:
+#### Step 3: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Expected output:
+```
+Successfully installed fastapi-0.104.0 uvicorn-0.24.0 pydantic-2.0.0
+httpx-0.25.0 python-dotenv-1.0.0 mcp-1.0.0
+```
+
+#### Step 4: Start Backend API
+
+Open Terminal 1:
+
+```bash
+cd todo-mcp-server
+source venv/bin/activate  # Activate venv
+uvicorn src.todo_mcp_server.api.main:app --reload --port 8000
+```
+
+You should see:
+```
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process
+INFO:     Application startup complete.
+```
+
+✅ Backend API is now running on `http://localhost:8000`
+
+#### Step 5: Start MCP Server
+
+Open Terminal 2:
+
+```bash
+cd todo-mcp-server
+source venv/bin/activate  # Activate venv
+python -m src.todo_mcp_server.cli --transport streamable-http --port 8080
+```
+
+You should see:
+```
+2024-01-04 10:00:00 - todo_mcp_server - INFO - Starting Todo MCP Server
+2024-01-04 10:00:00 - todo_mcp_server - INFO - Tools registered successfully
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+```
+
+✅ MCP Server is now running on `http://localhost:8080/mcp`
+
+## Configuring AI Client
+
+### Option A: Roo Code (VS Code Extension)
+
+#### Project-Level Configuration (Recommended)
+
+Create `.roo/mcp.json` in your project root:
+
+```bash
+mkdir -p .roo
+cat > .roo/mcp.json << 'EOF'
+{
+  "mcpServers": {
+    "todo": {
+      "type": "streamable-http",
+      "url": "http://localhost:8080/mcp",
+      "disabled": false,
+      "alwaysAllow": []
+    }
+  }
+}
+EOF
+```
+
+Benefits:
+- Project-specific configuration
+- Can be committed to version control
+- Automatically loaded when opening the project
+
+#### Global Configuration
+
+1. Open VS Code Settings (Cmd/Ctrl + ,)
+2. Search for "MCP"
+3. Click "Edit in settings.json"
+4. Add configuration:
+
+```json
+{
+  "mcpServers": {
+    "todo": {
+      "type": "streamable-http",
+      "url": "http://localhost:8080/mcp"
+    }
+  }
+}
+```
+
+5. Restart VS Code
+
+### Option B: Claude Desktop
+
+Edit the configuration file:
 
 **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 
 **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
-Add the following configuration:
+Add configuration:
 
 ```json
 {
   "mcpServers": {
     "todo": {
       "command": "python",
-      "args": ["-m", "todo_mcp_server"],
-      "env": {
-        "TODO_DB_PATH": "/path/to/your/todos.db"
-      }
+      "args": ["-m", "src.todo_mcp_server.cli", "--transport", "stdio"],
+      "cwd": "/path/to/genai/mcp/todo-mcp-server"
     }
   }
 }
 ```
 
-4. Restart Claude Desktop to load the MCP server.
+Restart Claude Desktop to load the server.
+
+## Verifying Installation
+
+### Test Backend API
+
+```bash
+# Health check
+curl http://localhost:8000/health
+# Expected: {"status":"healthy"}
+
+# List todos (empty initially)
+curl http://localhost:8000/api/todos
+# Expected: {"todos":[],"total":0,"limit":10,"offset":0}
+
+# Create a todo
+curl -X POST http://localhost:8000/api/todos \
+  -H "Content-Type: application/json" \
+  -d '{"title":"Learn MCP","description":"Study MCP protocol"}'
+```
+
+### Test MCP Server
+
+In Roo Code or Claude Desktop, try:
+- "Use the Todo MCP Server to create a new todo: 'Learn FastMCP'"
+- "Show me all my todos"
+- "Find todos containing 'learn'"
+
+The AI assistant should successfully invoke the MCP tools and display results.
 
 # Usage Examples
 
@@ -233,44 +502,139 @@ todo-mcp-server/
 ├── src/
 │   └── todo_mcp_server/
 │       ├── __init__.py
-│       ├── server.py          # Main MCP server implementation
-│       ├── models.py           # SQLAlchemy models
-│       └── database.py         # Database operations
+│       ├── server.py          # MCP server with FastMCP
+│       ├── cli.py             # CLI entry point
+│       ├── api/
+│       │   ├── main.py        # FastAPI application
+│       │   └── storage.py     # In-memory storage
+│       ├── tools/
+│       │   ├── get_todos.py   # Get todos tool
+│       │   └── create_todo.py # Create todo tool
+│       └── utils/
+│           └── http_client.py # HTTP client for API calls
 ├── docs/
 │   ├── README.md              # Main documentation
+│   ├── GETTING_STARTED.md     # Quick start guide
 │   ├── ARCHITECTURE.md        # Architecture details
-│   ├── API.md                 # API reference
 │   └── DEVELOPMENT.md         # Development guide
 ├── tests/                     # Test suite
-├── pyproject.toml            # Project configuration
+├── docker-compose.yml         # Docker configuration
+├── Dockerfile                 # Container image
+├── requirements.txt           # Python dependencies
+├── .env.example              # Environment variables template
 └── README.md
 ```
 
 ## Testing
 
-The server includes comprehensive tests for all functionality:
+### Manual API Testing
 
 ```bash
-# Run tests
-pytest tests/
+# Health check
+curl http://localhost:8000/health
 
-# Run with coverage
-pytest --cov=todo_mcp_server tests/
+# List all todos
+curl http://localhost:8000/api/todos
+
+# List pending todos only
+curl "http://localhost:8000/api/todos?status=pending"
+
+# Search todos
+curl "http://localhost:8000/api/todos?search=learn"
+
+# Create a todo
+curl -X POST http://localhost:8000/api/todos \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "My Todo",
+    "description": "Todo description",
+    "status": "pending"
+  }'
 ```
+
+### Testing MCP Tools
+
+In Roo Code or Claude Desktop:
+
+**Create Todos:**
+- "Create a todo: 'Learn Python'"
+- "Add a new todo 'Build MCP server' with description 'Follow the guide'"
+
+**List Todos:**
+- "Show me all todos"
+- "List all pending todos"
+
+**Search Todos:**
+- "Find todos about learning"
+- "Search for todos containing 'MCP'"
 
 ## Development Mode
 
-For development, install with development dependencies:
+For development with auto-reload:
 
 ```bash
-pip install -e ".[dev]"
+# Backend API with auto-reload
+uvicorn src.todo_mcp_server.api.main:app --reload --port 8000
+
+# MCP Server (restart manually after code changes)
+python -m src.todo_mcp_server.cli --log-level DEBUG
 ```
 
-This includes:
-- pytest for testing
-- black for code formatting
-- mypy for type checking
-- ruff for linting
+## Troubleshooting
+
+### Port Already in Use
+
+**Error**: `Address already in use`
+
+**Solution**:
+```bash
+# Find process using port 8000
+lsof -i :8000
+
+# Kill the process
+kill -9 <PID>
+
+# Or use a different port
+uvicorn src.todo_mcp_server.api.main:app --reload --port 8001
+```
+
+### Module Not Found
+
+**Error**: `ModuleNotFoundError: No module named 'fastapi'`
+
+**Solution**:
+```bash
+# Ensure virtual environment is activated
+source venv/bin/activate
+
+# Reinstall dependencies
+pip install -r requirements.txt
+```
+
+### Connection Refused
+
+**Error**: Connection refused when MCP server tries to reach API
+
+**Solution**:
+1. Ensure Backend API is running on port 8000
+2. Check API URL in configuration
+3. Test API directly: `curl http://localhost:8000/health`
+
+### MCP Server Not Found in Roo Code
+
+**Solution**:
+1. Verify MCP server is running: `curl http://localhost:8080/mcp`
+2. Check Roo Code settings.json or .roo/mcp.json configuration
+3. Restart VS Code
+4. Check Roo Code logs for connection errors
+
+### Tools Not Working
+
+**Solution**:
+1. Check both servers are running
+2. Verify logs for errors in both terminals
+3. Test API directly with curl
+4. Restart both servers
 
 # Key Features and Benefits
 
