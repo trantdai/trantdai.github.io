@@ -21,8 +21,8 @@ This proof-of-concept (PoC) investigates the application of generative AI within
 The PoC generative AI powered security self-service chatbot is built upon the following building blocks:
 
 - AI powered application<br>
-  - [Front end chatbot code](https://github.com/trantdai/genai/blob/main/selfservicebot.py)
-  - [AWS Lambda Knowledge Base autosync code](https://github.com/trantdai/genai/blob/main/autosync_kb.py)
+  - [Front end chatbot code](https://github.com/trantdai/genai/blob/main/apps/secbot/selfservicebot.py)
+  - [AWS Lambda Knowledge Base autosync code](https://github.com/trantdai/genai/blob/main/apps/secbot/autosync_kb.py)
 - Infrastructure<br>
   - [GitHub code repository](https://github.com/trantdai/genai)
   - [GitHub Actions - CI/CD engine](https://github.com/trantdai/genai/tree/main/.github/workflows)
@@ -115,19 +115,19 @@ export AWS_SESSION_TOKEN=*******************
 
 Install Python packages:
 ```
-pip install -r requirements.txt
+pip install -r apps/secbot/requirements.txt
 ```
 
 Run the chatbot:
 ```Python
-streamlit run selfservicebot.py
+streamlit run apps/secbot/selfservicebot.py
 ```
 
 ## Hosting via AWS
-TBD
+Amazon EKS
 
 # References
-1. [Security self service GitHub code repository](https://github.com/trantdai/genai)
+1. [Security self service GitHub code repository](https://github.com/trantdai/genai/tree/main/apps/secbot)
 2. [Use IAM roles to connect GitHub Actions to actions in AWS](https://aws.amazon.com/blogs/security/use-iam-roles-to-connect-github-actions-to-actions-in-aws/)
 3. [Implementing RAG App Using Knowledge Base from Amazon Bedrock and Streamlit](https://medium.com/@saikatm.courses/implementing-rag-app-using-knowledge-base-from-amazon-bedrock-and-streamlit-e52f8300f01d)
 4. [Amazon Bedrock & AWS Generative AI - Beginner to Advanced](https://cba.udemy.com/course/amazon-bedrock-aws-generative-ai-beginner-to-advanced/)
