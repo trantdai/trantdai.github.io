@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:0.95" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="80" fill="#ffffff" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="100" fill="#ffffff" opacity="0.1"/>
+  <circle cx="950" cy="150" r="60" fill="#ffffff" opacity="0.08"/>
+
+  <!-- Main content card -->
+  <rect x="100" y="150" width="1000" height="330" fill="url(#cardGradient)" rx="15" stroke="#ffffff" stroke-width="2" opacity="0.95"/>
+
+  <!-- MCP Logo/Icon -->
+  <circle cx="200" cy="315" r="70" fill="#667eea" opacity="0.2"/>
+  <circle cx="200" cy="315" r="50" fill="#667eea"/>
+  <text x="200" y="330" font-size="40" font-weight="bold" text-anchor="middle" fill="#ffffff">MCP</text>
+
+  <!-- Title -->
+  <text x="320" y="250" font-size="48" font-weight="bold" fill="#2d3748">Todo MCP Server</text>
+  <text x="320" y="300" font-size="28" fill="#4a5568">Extending AI Assistants with Custom Tools</text>
+
+  <!-- Features -->
+  <rect x="320" y="330" width="750" height="120" fill="#f7fafc" rx="8" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="340" y="360" font-size="16" font-weight="bold" fill="#667eea">✓ SQLite Persistence</text>
+  <text x="340" y="385" font-size="16" font-weight="bold" fill="#667eea">✓ CRUD Operations</text>
+  <text x="340" y="410" font-size="16" font-weight="bold" fill="#667eea">✓ Status Management</text>
+  <text x="340" y="435" font-size="16" font-weight="bold" fill="#667eea">✓ Search & Filter</text>
+
+  <text x="580" y="360" font-size="16" font-weight="bold" fill="#764ba2">✓ Priority Levels</text>
+  <text x="580" y="385" font-size="16" font-weight="bold" fill="#764ba2">✓ Natural Language</text>
+  <text x="580" y="410" font-size="16" font-weight="bold" fill="#764ba2">✓ Claude Desktop</text>
+  <text x="580" y="435" font-size="16" font-weight="bold" fill="#764ba2">✓ Python SDK</text>
+
+  <text x="820" y="360" font-size="16" font-weight="bold" fill="#48bb78">✓ Error Handling</text>
+  <text x="820" y="385" font-size="16" font-weight="bold" fill="#48bb78">✓ Type Safety</text>
+  <text x="820" y="410" font-size="16" font-weight="bold" fill="#48bb78">✓ Well Documented</text>
+  <text x="820" y="435" font-size="16" font-weight="bold" fill="#48bb78">✓ Open Source</text>
+
+  <!-- Bottom tag -->
+  <rect x="450" y="520" width="300" height="40" fill="#ffffff" rx="20" opacity="0.9"/>
+  <text x="600" y="547" font-size="18" font-weight="bold" text-anchor="middle" fill="#667eea">Model Context Protocol</text>
+</svg>
