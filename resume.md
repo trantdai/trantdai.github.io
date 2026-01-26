@@ -42,23 +42,23 @@ permalink: "/resume"
 - [CORE COMPETENCIES](#core-competencies)
 - [RECOGNISED ACHIEVEMENTS](#recognised-achievements)
 - [INDUSTRY EXPERIENCE](#industry-experience)
-    - [Staff Security Engineer - Security Automation](#staff-security-engineer---security-automation)
-    - [Senior Engineer - Security Automation](#senior-engineer---security-automation)
-    - [Senior Cyber Security Automation Engineer](#senior-cyber-security-automation-engineer)
-    - [Technology Owner - Firewall Automation](#technology-owner---firewall-automation)
-    - [Network Security Engineer](#network-security-engineer)
-    - [IT Network Support Analyst](#it-network-support-analyst)
-    - [Network Engineer](#network-engineer)
-    - [Network \& Systems Administrator, Contractor](#network--systems-administrator-contractor)
-    - [Cisco Network Engineer, Contractor](#cisco-network-engineer-contractor)
-    - [System Administrator](#system-administrator)
+  - [Staff Security Engineer - Security Automation](#staff-security-engineer---security-automation)
+  - [Senior Engineer - Security Automation](#senior-engineer---security-automation)
+  - [Senior Cyber Security Automation Engineer](#senior-cyber-security-automation-engineer)
+  - [Technology Owner - Firewall Automation](#technology-owner---firewall-automation)
+  - [Network Security Engineer](#network-security-engineer)
+  - [IT Network Support Analyst](#it-network-support-analyst)
+  - [Network Engineer](#network-engineer)
+  - [Network and Systems Administrator, Contractor](#network-and-systems-administrator-contractor)
+  - [Cisco Network Engineer, Contractor](#cisco-network-engineer-contractor)
+  - [System Administrator](#system-administrator)
 - [ACADEMIC EXPERIENCE](#academic-experience)
-    - [Researcher](#researcher)
+  - [Researcher](#researcher)
 - [EDUCATION HISTORY](#education-history)
-    - [PhD in Computing and Communications Engineering](#phd-in-computing-and-communications-engineering)
-    - [Master of Computer Engineering (Network Security Focus)](#master-of-computer-engineering-network-security-focus)
-    - [Engineer in Information and Communications Technology](#engineer-in-information-and-communications-technology)
-- [CERTIFICATIONS \& CONTINUOUS TRAINING/LEARNING](#certifications--continuous-traininglearning)
+  - [PhD in Computing and Communications Engineering](#phd-in-computing-and-communications-engineering)
+  - [Master of Computer Engineering (Network Security Focus)](#master-of-computer-engineering-network-security-focus)
+  - [Engineer in Information and Communications Technology](#engineer-in-information-and-communications-technology)
+- [CERTIFICATIONS AND CONTINUOUS PROFESSIONAL DEVELOPMENT](#certifications-and-continuous-professional-development)
   - [CERTIFICATIONS](#certifications)
   - [PROFESSIONAL TRAINING](#professional-training)
   - [CONTINUOUS LEARNING](#continuous-learning)
@@ -122,7 +122,7 @@ Architect of enterprise-scale security automation frameworks including multi-ven
 
 ## INDUSTRY EXPERIENCE
 
-#### Staff Security Engineer - Security Automation
+### Staff Security Engineer - Security Automation
 
 April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.com.au/)** - 30,001+ Employees
 
@@ -156,7 +156,7 @@ April 2023 - Present \| **[Commonwealth Bank of Australia](https://www.commbank.
 | Security as an API                                    | Technical/Solution Co-lead              | Group-wide REST API framework enabling programmatic security tool integration and automation                           |
 | DevSecOps                                             | Group Cybersecurity AppSec Champion     | Secure code review, AppSec standards, monthly champion meetups                                                         |
 
-#### Senior Engineer - Security Automation
+### Senior Engineer - Security Automation
 
 September 2022 - April 2023 \| **[Commonwealth Bank of Australia](https://www.commbank.com.au/)** - 30,001+ Employees
 
@@ -166,7 +166,7 @@ September 2022 - April 2023 \| **[Commonwealth Bank of Australia](https://www.co
   - Solution and Developer Lead and de facto Project Manager for the Akamai Automation Initiative, architecting, designing, implementing, and delivering the Terraform-based Akamai Automation Framework and self-service automation function benefiting business units across the bank
   - Organized and facilitated the Group Security CIO Engineering Talks Forum to foster knowledge sharing, collaboration, crowd-reviewing, effective SME identification and resource allocation, and establishment of improved processes within Security Engineering teams
 
-#### Senior Cyber Security Automation Engineer
+### Senior Cyber Security Automation Engineer
 
 May 2022 - September 2022 \| **[Commonwealth Bank of Australia](https://www.commbank.com.au/)** - 30,001+ Employees
 
@@ -188,7 +188,7 @@ May 2022 - September 2022 \| **[Commonwealth Bank of Australia](https://www.comm
 - Saved around 4200 hours annually for both Splunk team and stakeholders through the delivery of the Splunk Log4J Onboarding Acceleration Automation project well before a given deadline
 - Achieved the recognition of Commitment for the delivery of the CI/CD pipeline that automates firewall policy breach reporting function for Network Security control team
 
-#### Technology Owner - Firewall Automation
+### Technology Owner - Firewall Automation
 
 February 2018 – May 2021 \| **[Amadeus IT Group](https://amadeus.com/en)** - 10,001+ Employees
 
@@ -203,7 +203,7 @@ February 2018 – May 2021 \| **[Amadeus IT Group](https://amadeus.com/en)** - 1
 - Mentor team members on Network Security and automation
 - Applied knowledge/skills/tools: PAN & Cisco firewalling & REST API, Python, Object oriented software design and development, Linux/Windows administration, Git, Bitbucket, Jira, Ansible/AWX, Jenkins, Docker, CI/CD workflow, Visual Studio Code, Insomnia, OpenAPI, Azure network/security, Terraform, Golang, Terratest
 
-#### Network Security Engineer
+### Network Security Engineer
 
 February 2015 – January 2018 \| **[Amadeus IT Pacific](https://amadeus.com/en)** - 10,001+ Employees
 
@@ -219,7 +219,7 @@ February 2015 – January 2018 \| **[Amadeus IT Pacific](https://amadeus.com/en)
 - Collaborate with vendors' TAC and professional services to resolve complex issues, fine-tune systems, and explore new features to meet emerging business challenges
 - Applied knowledge/skills/tools: PAN firewalls and Panorama, Cisco firewalls and CSM, Qradar, Splunk, Symantec Blue Coat proxies and Management Center
 
-#### IT Network Support Analyst
+### IT Network Support Analyst
 
 May 2013 - February 2015 \| **[LION Pty Ltd](http://lionco.com/)** - 5001-10,000 Employees
 
@@ -241,7 +241,7 @@ May 2013 - February 2015 \| **[LION Pty Ltd](http://lionco.com/)** - 5001-10,000
 - Successful migration from Forefront TMG to Palo Alto
 - Effective prevention of Cryptolocker via Palo Alto URL filtering
 
-#### Network Engineer
+### Network Engineer
 
 February 2012 – May 2013 \| **[NETWORX AUSTRALIA](http://networxenterprise.com/)** - 10,001+ Employees
 
@@ -256,7 +256,7 @@ February 2012 – May 2013 \| **[NETWORX AUSTRALIA](http://networxenterprise.com
 - Research new technologies & products and their applications
 - Collaborate with technology vendors and partners on product enablement
 
-#### Network & Systems Administrator, Contractor
+### Network and Systems Administrator, Contractor
 
 March 2011 – April 2012 \| **[Ma & Company Solicitors, Sydney](http://maco.com.au/main.html)**
 
@@ -274,7 +274,7 @@ March 2011 – April 2012 \| **[Ma & Company Solicitors, Sydney](http://maco.com
 
 - Selected by management as sole technical consultant for company
 
-#### Cisco Network Engineer, Contractor
+### Cisco Network Engineer, Contractor
 
 October 2011 \| **[HotelsCombined™, Sydney](http://www.hotelscombined.com/)**
 
@@ -287,7 +287,7 @@ October 2011 \| **[HotelsCombined™, Sydney](http://www.hotelscombined.com/)**
 - Solved intractable technical problems before stipulated deadline
 - Awarded bonus of 25% of total payment for supplied service
 
-#### System Administrator
+### System Administrator
 
 April 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http://www.mbansw.asn.au/)**
 
@@ -307,7 +307,7 @@ April 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:
 
 ## ACADEMIC EXPERIENCE
 
-#### Researcher
+### Researcher
 
 2008 –2011 \| **[Centre for Real-Time Information Networks](http://www.crin.uts.edu.au/)**, University of Technology, Sydney
 
@@ -325,25 +325,25 @@ April 2011 – June 2011 \| **[Master Builders Association of NSW, Sydney](http:
 
 ## EDUCATION HISTORY
 
-#### PhD in Computing and Communications Engineering
+### PhD in Computing and Communications Engineering
 
 2008 – 2011  |  [University of Technology, Sydney](https://www.uts.edu.au/), Australia
 <br>
 **Thesis:** ***Controlled Link Establishment Attacks on Distributed Sensor Networks and Countermeasures***
 
-#### Master of Computer Engineering (Network Security Focus)
+### Master of Computer Engineering (Network Security Focus)
 
 2005 – 2007  |  [Kyung Hee University](https://www.khu.ac.kr/eng/main/index.do), Suwon, South Korea
 <br>
 **Thesis:** ***Security Algorithms for Wireless Sensor Networks***
 
-#### Engineer in Information and Communications Technology
+### Engineer in Information and Communications Technology
 
 2000 – 2005  |  [Hanoi University of Science and Technology](https://en.hust.edu.vn/), Hanoi, Vietnam
 <br>
 **Thesis:** ***Kerberos-based authentication for FTP applications***
 
-## CERTIFICATIONS & CONTINUOUS TRAINING/LEARNING
+## CERTIFICATIONS AND CONTINUOUS PROFESSIONAL DEVELOPMENT
 
 ### CERTIFICATIONS
 
