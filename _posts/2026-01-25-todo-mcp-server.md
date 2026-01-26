@@ -1,7 +1,7 @@
 ---
 title: Building a Todo MCP Server - A Learning Journey into MCP Development
 layout: post
-post-image: "/assets/images/blog/20260126/mcp-todo-server.svg"
+post-image: "/assets/images/blog/20260125/mcp-todo-server.jpg"
 description: A hands-on learning project implementing a Model Context Protocol server with FastMCP, streamable-http transport, and dynamic tool discovery
 tags:
 - project
@@ -45,7 +45,7 @@ MCP servers act as bridges between AI assistants and external systems, extending
 
 # High Level Architecture and Design
 
-![Todo MCP Server Architecture](/assets/images/blog/20260126/todo_mcp_architecture.svg "Todo MCP Server Architecture")
+![Todo MCP Server Architecture](/assets/images/blog/20260125/todo_mcp_architecture.svg "Todo MCP Server Architecture")
 
 The Todo MCP server implements a layered architecture with three main components:
 
@@ -470,7 +470,7 @@ Once connected to Claude Desktop, you can interact with the todo server naturall
 
 **Claude**: *Uses list_todos tool with priority filter*
 
-![List Todos Example](/assets/images/blog/20260126/list_todos_example.svg "List Todos Example")
+![List Todos Example](/assets/images/blog/20260125/list_todos_example.svg "List Todos Example")
 
 ## Updating Todo Status
 
@@ -491,7 +491,7 @@ Once connected to Claude Desktop, you can interact with the todo server naturall
 
 **Claude**: *Uses search_todos tool*
 
-![Search Todos Example](/assets/images/blog/20260126/search_todos_example.svg "Search Todos Example")
+![Search Todos Example](/assets/images/blog/20260125/search_todos_example.svg "Search Todos Example")
 
 # Development Workflow
 
@@ -677,7 +677,7 @@ The Todo MCP server seamlessly integrates with Claude Desktop, enabling natural 
 3. **Intelligent Filtering**: Claude can interpret user intent and apply appropriate filters
 4. **Batch Operations**: Multiple todos can be managed in a single conversation
 
-![Claude Desktop Integration](/assets/images/blog/20260126/claude_desktop_integration.svg "Claude Desktop Integration")
+![Claude Desktop Integration](/assets/images/blog/20260125/claude_desktop_integration.svg "Claude Desktop Integration")
 
 # Future Enhancements
 
