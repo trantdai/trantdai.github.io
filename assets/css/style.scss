@@ -448,10 +448,14 @@ a.navbar-link {
             color: #ffd700;
         }
 
-        ul,
-        ol,
         blockquote {
             display: inline-block;
+        }
+
+        ul,
+        ol {
+            display: block;
+            margin-left: 2em;
         }
 
         .read-book-li::marker {
