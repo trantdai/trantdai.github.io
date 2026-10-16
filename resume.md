@@ -33,7 +33,7 @@ permalink: "/resume"
 <br />
 </div>
 <br>
-*Last updated: **Aug 2026** — Updated section(s): **EXECUTIVE SUMMARY, INDUSTRY EXPERIENCE***
+*Last updated: **Oct 2026** — Updated section(s): **RECOGNISED ACHIEVEMENTS***
 
 ## TABLE OF CONTENTS
 
@@ -104,6 +104,12 @@ Architect of enterprise-scale security automation frameworks including multi-ven
 
 ## RECOGNISED ACHIEVEMENTS
 
+🥇 Oct 2026 \| Chief Engineer Recognition - Recognised for trusted technical partnership and deep security engineering expertise, delivering significant improvements in enterprise DevSecOps performance and efficiency, including 51% faster security workflow execution and approximately 200,000 fewer API calls per month
+<br>
+🥇 Aug 2026 \| General Manager Recognition - Recognised for delivering automated security controls into enterprise CI/CD, strengthening secure-by-default engineering while reducing manual assurance
+<br>
+🥇 Feb 2026 \| Group Executive Recognition (CTO & CIO) - Recognised for delivering identity security control verification into enterprise CI/CD, strengthening security assurance and resilience without slowing engineering delivery
+<br>
 🥇 2022 \| Annual performance achievement of Above Expectations and top (75% of maximum) bonus award
 <br>
 🥇 2021 \| Recognition of Commitment for the delivery of the CI/CD pipeline that automates firewall policy breach reporting for Network Security control team
